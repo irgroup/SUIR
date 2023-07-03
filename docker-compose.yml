@@ -1,0 +1,33 @@
+version: "3"
+services:
+
+  simulation:
+    image: simulation
+    volumes: 
+        - /home/ub2010/git/SUIR/simulation:/workspace
+        
+    tty: true
+    
+    links:
+      - postgres
+
+  postgres:
+    image: postgres:12.1
+    restart: always
+    environment:
+      POSTGRES_USER: root
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+
+  api_server:
+    image: api_server
+    volumes:
+        - /home/ub2010/git/SUIR/api_server/app:/app
+    
+    expose:
+      - 8080
+    
+    links:
+      - postgres
+    command: python3 /app/api_server.py  
+    tty: true
