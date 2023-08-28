@@ -145,7 +145,7 @@
 45,1,2,Black Bear Attacks detail
 46,1,2,Black Bear Attacks this
 47,1,2,Black Bear Attacks attract
-48,1,2,Black Bear Attacks and/or
+48,1,2,Black Bear Attacks and or
 49,1,2,Black Bear Attacks steps
 50,1,2,Black Bear Attacks devised
 51,1,2,Black Bear Attacks preferably
@@ -310,7 +310,7 @@
 10,1,4,Wildlife Extinction species
 11,1,4,Wildlife Extinction 
 12,1,4,Wildlife Extinction well
-13,1,4,Wildlife Extinction declines?
+13,1,4,Wildlife Extinction declines 
 14,1,4,Wildlife Extinction prevent
 15,1,4,Wildlife Extinction known
 16,1,4,Wildlife Extinction such
@@ -354,7 +354,7 @@
 54,1,4,Wildlife Extinction relevant species
 55,1,4,Wildlife Extinction relevant 
 56,1,4,Wildlife Extinction relevant well
-57,1,4,Wildlife Extinction relevant declines?
+57,1,4,Wildlife Extinction relevant declines 
 58,1,4,Wildlife Extinction relevant prevent
 59,1,4,Wildlife Extinction relevant known
 60,1,4,Wildlife Extinction relevant such
@@ -419,7 +419,7 @@
 19,1,5,Health and Computer Terminals tunnel
 20,1,5,Health and Computer Terminals information
 21,1,5,Health and Computer Terminals are
-22,1,5,Health and Computer Terminals basis?
+22,1,5,Health and Computer Terminals basis 
 23,1,5,Health and Computer Terminals what
 24,1,5,Health and Computer Terminals Such
 25,1,5,Health and Computer Terminals Is
@@ -430,7 +430,7 @@
 30,1,5,Health and Computer Terminals cataracts
 31,1,5,Health and Computer Terminals fatigue
 32,1,5,Health and Computer Terminals but
-33,1,5,Health and Computer Terminals disorder/problems
+33,1,5,Health and Computer Terminals disorder problems
 34,1,5,Health and Computer Terminals and
 35,1,5,Health and Computer Terminals as
 36,1,5,Health and Computer Terminals hazardous
@@ -474,7 +474,7 @@
 74,1,5,Health and Computer Terminals alleviate tunnel
 75,1,5,Health and Computer Terminals alleviate information
 76,1,5,Health and Computer Terminals alleviate are
-77,1,5,Health and Computer Terminals alleviate basis?
+77,1,5,Health and Computer Terminals alleviate basis 
 78,1,5,Health and Computer Terminals alleviate what
 79,1,5,Health and Computer Terminals alleviate Such
 80,1,5,Health and Computer Terminals alleviate Is
@@ -485,7 +485,7 @@
 85,1,5,Health and Computer Terminals alleviate cataracts
 86,1,5,Health and Computer Terminals alleviate fatigue
 87,1,5,Health and Computer Terminals alleviate but
-88,1,5,Health and Computer Terminals alleviate disorder/problems
+88,1,5,Health and Computer Terminals alleviate disorder problems
 89,1,5,Health and Computer Terminals alleviate and
 90,1,5,Health and Computer Terminals alleviate as
 91,1,5,Health and Computer Terminals alleviate hazardous
@@ -615,7 +615,7 @@
 15,1,7,transportation tunnel disasters oil
 16,1,7,transportation tunnel disasters fire
 17,1,7,transportation tunnel disasters sewage
-18,1,7,transportation tunnel disasters transportation?
+18,1,7,transportation tunnel disasters transportation 
 19,1,7,transportation tunnel disasters earthquake
 20,1,7,transportation tunnel disasters lives
 21,1,7,transportation tunnel disasters not
@@ -670,7 +670,7 @@
 70,1,7,transportation tunnel disasters relevant oil
 71,1,7,transportation tunnel disasters relevant fire
 72,1,7,transportation tunnel disasters relevant sewage
-73,1,7,transportation tunnel disasters relevant transportation?
+73,1,7,transportation tunnel disasters relevant transportation 
 74,1,7,transportation tunnel disasters relevant earthquake
 75,1,7,transportation tunnel disasters relevant lives
 76,1,7,transportation tunnel disasters relevant not
@@ -723,7 +723,7 @@
 23,1,8,piracy body
 24,1,8,piracy vessels
 25,1,8,piracy water
-26,1,8,piracy boats?
+26,1,8,piracy boats 
 27,1,8,piracy a
 28,1,8,piracy non-relevant
 29,1,8,piracy modern
@@ -768,7 +768,7 @@
 68,1,8,piracy been body
 69,1,8,piracy been vessels
 70,1,8,piracy been water
-71,1,8,piracy been boats?
+71,1,8,piracy been boats 
 72,1,8,piracy been a
 73,1,8,piracy been non-relevant
 74,1,8,piracy been modern
@@ -799,7 +799,7 @@
 99,1,8,piracy discussing their
 100,1,8,piracy discussing old
 1,1,9,hydrogen energy
-2,1,9,hydrogen energy source?
+2,1,9,hydrogen energy source 
 3,1,9,hydrogen energy relevant
 4,1,9,hydrogen energy A
 5,1,9,hydrogen energy document
@@ -828,36 +828,36 @@
 28,1,9,hydrogen energy fusion
 29,1,9,hydrogen energy of
 30,1,9,hydrogen energy What
-31,1,9,hydrogen energy source? source?
-32,1,9,hydrogen energy source? relevant
-33,1,9,hydrogen energy source? A
-34,1,9,hydrogen energy source? document
-35,1,9,hydrogen energy source? to
-36,1,9,hydrogen energy source? the
-37,1,9,hydrogen energy source? feasible
-38,1,9,hydrogen energy source? describe
-39,1,9,hydrogen energy source? use
-40,1,9,hydrogen energy source? on
-41,1,9,hydrogen energy source? is
-42,1,9,hydrogen energy source? research
-43,1,9,hydrogen energy source? engines
-44,1,9,hydrogen energy source? 
-45,1,9,hydrogen energy source? fuel
-46,1,9,hydrogen energy source? in
-47,1,9,hydrogen energy source? status
-48,1,9,hydrogen energy source? as
-49,1,9,hydrogen energy source? a
-50,1,9,hydrogen energy source? energy
-51,1,9,hydrogen energy source? hydrogen
-52,1,9,hydrogen energy source? will
-53,1,9,hydrogen energy source? power
-54,1,9,hydrogen energy source? controlled
-55,1,9,hydrogen energy source? or
-56,1,9,hydrogen energy source? progress
-57,1,9,hydrogen energy source? fusion
-58,1,9,hydrogen energy source? of
-59,1,9,hydrogen energy source? What
-60,1,9,hydrogen energy relevant source?
+31,1,9,hydrogen energy source  source 
+32,1,9,hydrogen energy source  relevant
+33,1,9,hydrogen energy source  A
+34,1,9,hydrogen energy source  document
+35,1,9,hydrogen energy source  to
+36,1,9,hydrogen energy source  the
+37,1,9,hydrogen energy source  feasible
+38,1,9,hydrogen energy source  describe
+39,1,9,hydrogen energy source  use
+40,1,9,hydrogen energy source  on
+41,1,9,hydrogen energy source  is
+42,1,9,hydrogen energy source  research
+43,1,9,hydrogen energy source  engines
+44,1,9,hydrogen energy source  
+45,1,9,hydrogen energy source  fuel
+46,1,9,hydrogen energy source  in
+47,1,9,hydrogen energy source  status
+48,1,9,hydrogen energy source  as
+49,1,9,hydrogen energy source  a
+50,1,9,hydrogen energy source  energy
+51,1,9,hydrogen energy source  hydrogen
+52,1,9,hydrogen energy source  will
+53,1,9,hydrogen energy source  power
+54,1,9,hydrogen energy source  controlled
+55,1,9,hydrogen energy source  or
+56,1,9,hydrogen energy source  progress
+57,1,9,hydrogen energy source  fusion
+58,1,9,hydrogen energy source  of
+59,1,9,hydrogen energy source  What
+60,1,9,hydrogen energy relevant source 
 61,1,9,hydrogen energy relevant relevant
 62,1,9,hydrogen energy relevant A
 63,1,9,hydrogen energy relevant document
@@ -886,7 +886,7 @@
 86,1,9,hydrogen energy relevant fusion
 87,1,9,hydrogen energy relevant of
 88,1,9,hydrogen energy relevant What
-89,1,9,hydrogen energy A source?
+89,1,9,hydrogen energy A source 
 90,1,9,hydrogen energy A relevant
 91,1,9,hydrogen energy A A
 92,1,9,hydrogen energy A document
@@ -1012,7 +1012,7 @@
 12,1,11,mercy killing specifics
 13,1,11,mercy killing killing
 14,1,11,mercy killing are
-15,1,11,mercy killing victim's
+15,1,11,mercy killing victim s
 16,1,11,mercy killing such
 17,1,11,mercy killing support
 18,1,11,mercy killing removal
@@ -1026,7 +1026,7 @@
 26,1,11,mercy killing as
 27,1,11,mercy killing a
 28,1,11,mercy killing determined
-29,1,11,mercy killing "letters
+29,1,11,mercy killing  letters
 30,1,11,mercy killing life
 31,1,11,mercy killing individual
 32,1,11,mercy killing cases
@@ -1034,7 +1034,7 @@
 34,1,11,mercy killing general
 35,1,11,mercy killing murder-suicide
 36,1,11,mercy killing without
-37,1,11,mercy killing editor"
+37,1,11,mercy killing editor 
 38,1,11,mercy killing systems
 39,1,11,mercy killing or
 40,1,11,mercy killing documents
@@ -1056,7 +1056,7 @@
 56,1,11,mercy killing mercy specifics
 57,1,11,mercy killing mercy killing
 58,1,11,mercy killing mercy are
-59,1,11,mercy killing mercy victim's
+59,1,11,mercy killing mercy victim s
 60,1,11,mercy killing mercy such
 61,1,11,mercy killing mercy support
 62,1,11,mercy killing mercy removal
@@ -1070,7 +1070,7 @@
 70,1,11,mercy killing mercy as
 71,1,11,mercy killing mercy a
 72,1,11,mercy killing mercy determined
-73,1,11,mercy killing mercy "letters
+73,1,11,mercy killing mercy  letters
 74,1,11,mercy killing mercy life
 75,1,11,mercy killing mercy individual
 76,1,11,mercy killing mercy cases
@@ -1078,7 +1078,7 @@
 78,1,11,mercy killing mercy general
 79,1,11,mercy killing mercy murder-suicide
 80,1,11,mercy killing mercy without
-81,1,11,mercy killing mercy editor"
+81,1,11,mercy killing mercy editor 
 82,1,11,mercy killing mercy systems
 83,1,11,mercy killing mercy or
 84,1,11,mercy killing mercy documents
@@ -1205,7 +1205,7 @@
 5,1,13,Amazon rain forest Relevant
 6,1,13,Amazon rain forest forest;
 7,1,13,Amazon rain forest taken
-8,1,13,Amazon rain forest forest?
+8,1,13,Amazon rain forest forest 
 9,1,13,Amazon rain forest official
 10,1,13,Amazon rain forest organizations
 11,1,13,Amazon rain forest 
@@ -1224,7 +1224,7 @@
 24,1,13,Amazon rain forest endeavors
 25,1,13,Amazon rain forest degrees
 26,1,13,Amazon rain forest these
-27,1,13,Amazon rain forest identify:
+27,1,13,Amazon rain forest identify 
 28,1,13,Amazon rain forest being
 29,1,13,Amazon rain forest by
 30,1,13,Amazon rain forest documents
@@ -1243,7 +1243,7 @@
 43,1,13,Amazon rain forest included Relevant
 44,1,13,Amazon rain forest included forest;
 45,1,13,Amazon rain forest included taken
-46,1,13,Amazon rain forest included forest?
+46,1,13,Amazon rain forest included forest 
 47,1,13,Amazon rain forest included official
 48,1,13,Amazon rain forest included organizations
 49,1,13,Amazon rain forest included 
@@ -1262,7 +1262,7 @@
 62,1,13,Amazon rain forest included endeavors
 63,1,13,Amazon rain forest included degrees
 64,1,13,Amazon rain forest included these
-65,1,13,Amazon rain forest included identify:
+65,1,13,Amazon rain forest included identify 
 66,1,13,Amazon rain forest included being
 67,1,13,Amazon rain forest included by
 68,1,13,Amazon rain forest included documents
@@ -1281,7 +1281,7 @@
 81,1,13,Amazon rain forest to Relevant
 82,1,13,Amazon rain forest to forest;
 83,1,13,Amazon rain forest to taken
-84,1,13,Amazon rain forest to forest?
+84,1,13,Amazon rain forest to forest 
 85,1,13,Amazon rain forest to official
 86,1,13,Amazon rain forest to organizations
 87,1,13,Amazon rain forest to 
@@ -1300,17 +1300,17 @@
 100,1,13,Amazon rain forest to endeavors
 1,1,14,tropical storms
 2,1,14,tropical storms the
-3,1,14,tropical storms life?
+3,1,14,tropical storms life 
 4,1,14,tropical storms storm
 5,1,14,tropical storms 
 6,1,14,tropical storms describe
 7,1,14,tropical storms Documents
 8,1,14,tropical storms are
 9,1,14,tropical storms not
-10,1,14,tropical storms damage/casualties
-11,1,14,tropical storms "small"
+10,1,14,tropical storms damage casualties
+11,1,14,tropical storms small
 12,1,14,tropical storms The
-13,1,14,tropical storms "limited"
+13,1,14,tropical storms  limited 
 14,1,14,tropical storms affected
 15,1,14,tropical storms that
 16,1,14,tropical storms property
@@ -1328,7 +1328,7 @@
 28,1,14,tropical storms storms
 29,1,14,tropical storms relevant
 30,1,14,tropical storms have
-31,1,14,tropical storms "slight"
+31,1,14,tropical storms  slight 
 32,1,14,tropical storms or
 33,1,14,tropical storms by
 34,1,14,tropical storms significant
@@ -1338,17 +1338,17 @@
 38,1,14,tropical storms interest
 39,1,14,tropical storms What
 40,1,14,tropical storms the the
-41,1,14,tropical storms the life?
+41,1,14,tropical storms the life 
 42,1,14,tropical storms the storm
 43,1,14,tropical storms the 
 44,1,14,tropical storms the describe
 45,1,14,tropical storms the Documents
 46,1,14,tropical storms the are
 47,1,14,tropical storms the not
-48,1,14,tropical storms the damage/casualties
-49,1,14,tropical storms the "small"
+48,1,14,tropical storms the damage casualties
+49,1,14,tropical storms the  small 
 50,1,14,tropical storms the The
-51,1,14,tropical storms the "limited"
+51,1,14,tropical storms the  limited 
 52,1,14,tropical storms the affected
 53,1,14,tropical storms the that
 54,1,14,tropical storms the property
@@ -1366,7 +1366,7 @@
 66,1,14,tropical storms the storms
 67,1,14,tropical storms the relevant
 68,1,14,tropical storms the have
-69,1,14,tropical storms the "slight"
+69,1,14,tropical storms the  slight 
 70,1,14,tropical storms the or
 71,1,14,tropical storms the by
 72,1,14,tropical storms the significant
@@ -1375,29 +1375,29 @@
 75,1,14,tropical storms the of
 76,1,14,tropical storms the interest
 77,1,14,tropical storms the What
-78,1,14,tropical storms life? the
-79,1,14,tropical storms life? life?
-80,1,14,tropical storms life? storm
-81,1,14,tropical storms life? 
-82,1,14,tropical storms life? describe
-83,1,14,tropical storms life? Documents
-84,1,14,tropical storms life? are
-85,1,14,tropical storms life? not
-86,1,14,tropical storms life? damage/casualties
-87,1,14,tropical storms life? "small"
-88,1,14,tropical storms life? The
-89,1,14,tropical storms life? "limited"
-90,1,14,tropical storms life? affected
-91,1,14,tropical storms life? that
-92,1,14,tropical storms life? property
-93,1,14,tropical storms life? date
-94,1,14,tropical storms life? extent
-95,1,14,tropical storms life? and
-96,1,14,tropical storms life? loss
-97,1,14,tropical storms life? as
-98,1,14,tropical storms life? (hurricanes
-99,1,14,tropical storms life? area
-100,1,14,tropical storms life? caused
+78,1,14,tropical storms life  the
+79,1,14,tropical storms life  life 
+80,1,14,tropical storms life  storm
+81,1,14,tropical storms life  
+82,1,14,tropical storms life  describe
+83,1,14,tropical storms life  Documents
+84,1,14,tropical storms life  are
+85,1,14,tropical storms life  not
+86,1,14,tropical storms life  damage casualties
+87,1,14,tropical storms life   small 
+88,1,14,tropical storms life  The
+89,1,14,tropical storms life   limited 
+90,1,14,tropical storms life  affected
+91,1,14,tropical storms life  that
+92,1,14,tropical storms life  property
+93,1,14,tropical storms life  date
+94,1,14,tropical storms life  extent
+95,1,14,tropical storms life  and
+96,1,14,tropical storms life  loss
+97,1,14,tropical storms life  as
+98,1,14,tropical storms life  (hurricanes
+99,1,14,tropical storms life  area
+100,1,14,tropical storms life  caused
 1,1,15,Cuba, sugar, exports
 2,1,15,Cuba, sugar, exports relevant
 3,1,15,Cuba, sugar, exports document
@@ -1405,7 +1405,7 @@
 5,1,15,Cuba, sugar, exports regarding
 6,1,15,Cuba, sugar, exports How
 7,1,15,Cuba, sugar, exports does
-8,1,15,Cuba, sugar, exports Cuba's
+8,1,15,Cuba, sugar, exports Cuba s
 9,1,15,Cuba, sugar, exports mentioned
 10,1,15,Cuba, sugar, exports information
 11,1,15,Cuba, sugar, exports provide
@@ -1428,14 +1428,14 @@
 28,1,15,Cuba, sugar, exports explicitly
 29,1,15,Cuba, sugar, exports countries
 30,1,15,Cuba, sugar, exports exports
-31,1,15,Cuba, sugar, exports it?
+31,1,15,Cuba, sugar, exports it 
 32,1,15,Cuba, sugar, exports relevant relevant
 33,1,15,Cuba, sugar, exports relevant document
 34,1,15,Cuba, sugar, exports relevant A
 35,1,15,Cuba, sugar, exports relevant regarding
 36,1,15,Cuba, sugar, exports relevant How
 37,1,15,Cuba, sugar, exports relevant does
-38,1,15,Cuba, sugar, exports relevant Cuba's
+38,1,15,Cuba, sugar, exports relevant Cuba s
 39,1,15,Cuba, sugar, exports relevant mentioned
 40,1,15,Cuba, sugar, exports relevant information
 41,1,15,Cuba, sugar, exports relevant provide
@@ -1458,14 +1458,14 @@
 58,1,15,Cuba, sugar, exports relevant explicitly
 59,1,15,Cuba, sugar, exports relevant countries
 60,1,15,Cuba, sugar, exports relevant exports
-61,1,15,Cuba, sugar, exports relevant it?
+61,1,15,Cuba, sugar, exports relevant it 
 62,1,15,Cuba, sugar, exports document relevant
 63,1,15,Cuba, sugar, exports document document
 64,1,15,Cuba, sugar, exports document A
 65,1,15,Cuba, sugar, exports document regarding
 66,1,15,Cuba, sugar, exports document How
 67,1,15,Cuba, sugar, exports document does
-68,1,15,Cuba, sugar, exports document Cuba's
+68,1,15,Cuba, sugar, exports document Cuba s
 69,1,15,Cuba, sugar, exports document mentioned
 70,1,15,Cuba, sugar, exports document information
 71,1,15,Cuba, sugar, exports document provide
@@ -1488,14 +1488,14 @@
 88,1,15,Cuba, sugar, exports document explicitly
 89,1,15,Cuba, sugar, exports document countries
 90,1,15,Cuba, sugar, exports document exports
-91,1,15,Cuba, sugar, exports document it?
+91,1,15,Cuba, sugar, exports document it 
 92,1,15,Cuba, sugar, exports A relevant
 93,1,15,Cuba, sugar, exports A document
 94,1,15,Cuba, sugar, exports A A
 95,1,15,Cuba, sugar, exports A regarding
 96,1,15,Cuba, sugar, exports A How
 97,1,15,Cuba, sugar, exports A does
-98,1,15,Cuba, sugar, exports A Cuba's
+98,1,15,Cuba, sugar, exports A Cuba s
 99,1,15,Cuba, sugar, exports A mentioned
 100,1,15,Cuba, sugar, exports A information
 1,1,16,art, stolen, forged
@@ -1532,7 +1532,7 @@
 32,1,16,art, stolen, forged though
 33,1,16,art, stolen, forged of
 34,1,16,art, stolen, forged things
-35,1,16,art, stolen, forged art?
+35,1,16,art, stolen, forged art 
 36,1,16,art, stolen, forged What
 37,1,16,art, stolen, forged been been
 38,1,16,art, stolen, forged been relevant
@@ -1567,7 +1567,7 @@
 67,1,16,art, stolen, forged been though
 68,1,16,art, stolen, forged been of
 69,1,16,art, stolen, forged been things
-70,1,16,art, stolen, forged been art?
+70,1,16,art, stolen, forged been art 
 71,1,16,art, stolen, forged been What
 72,1,16,art, stolen, forged relevant been
 73,1,16,art, stolen, forged relevant relevant
@@ -1738,7 +1738,7 @@
 38,1,18,UV damage, eyes a
 39,1,18,UV damage, eyes exposure
 40,1,18,UV damage, eyes do
-41,1,18,UV damage, eyes and/or
+41,1,18,UV damage, eyes and or
 42,1,18,UV damage, eyes will
 43,1,18,UV damage, eyes programs
 44,1,18,UV damage, eyes lasers
@@ -1793,7 +1793,7 @@
 93,1,18,UV damage, eyes diseases a
 94,1,18,UV damage, eyes diseases exposure
 95,1,18,UV damage, eyes diseases do
-96,1,18,UV damage, eyes diseases and/or
+96,1,18,UV damage, eyes diseases and or
 97,1,18,UV damage, eyes diseases will
 98,1,18,UV damage, eyes diseases programs
 99,1,18,UV damage, eyes diseases lasers
@@ -1804,7 +1804,7 @@
 4,1,19,Greek, philosophy, stoicism contemporary
 5,1,19,Greek, philosophy, stoicism interest
 6,1,19,Greek, philosophy, stoicism stoic
-7,1,19,Greek, philosophy, stoicism stoicism?
+7,1,19,Greek, philosophy, stoicism stoicism 
 8,1,19,Greek, philosophy, stoicism are
 9,1,19,Greek, philosophy, stoicism plays
 10,1,19,Greek, philosophy, stoicism 
@@ -1818,7 +1818,7 @@
 18,1,19,Greek, philosophy, stoicism references
 19,1,19,Greek, philosophy, stoicism and
 20,1,19,Greek, philosophy, stoicism artistic
-21,1,19,Greek, philosophy, stoicism "stoic"
+21,1,19,Greek, philosophy, stoicism  stoic 
 22,1,19,Greek, philosophy, stoicism all
 23,1,19,Greek, philosophy, stoicism Actual
 24,1,19,Greek, philosophy, stoicism relevant
@@ -1830,7 +1830,7 @@
 30,1,19,Greek, philosophy, stoicism to contemporary
 31,1,19,Greek, philosophy, stoicism to interest
 32,1,19,Greek, philosophy, stoicism to stoic
-33,1,19,Greek, philosophy, stoicism to stoicism?
+33,1,19,Greek, philosophy, stoicism to stoicism 
 34,1,19,Greek, philosophy, stoicism to are
 35,1,19,Greek, philosophy, stoicism to plays
 36,1,19,Greek, philosophy, stoicism to 
@@ -1844,7 +1844,7 @@
 44,1,19,Greek, philosophy, stoicism to references
 45,1,19,Greek, philosophy, stoicism to and
 46,1,19,Greek, philosophy, stoicism to artistic
-47,1,19,Greek, philosophy, stoicism to "stoic"
+47,1,19,Greek, philosophy, stoicism to  stoic 
 48,1,19,Greek, philosophy, stoicism to all
 49,1,19,Greek, philosophy, stoicism to Actual
 50,1,19,Greek, philosophy, stoicism to relevant
@@ -1856,7 +1856,7 @@
 56,1,19,Greek, philosophy, stoicism the contemporary
 57,1,19,Greek, philosophy, stoicism the interest
 58,1,19,Greek, philosophy, stoicism the stoic
-59,1,19,Greek, philosophy, stoicism the stoicism?
+59,1,19,Greek, philosophy, stoicism the stoicism 
 60,1,19,Greek, philosophy, stoicism the are
 61,1,19,Greek, philosophy, stoicism the plays
 62,1,19,Greek, philosophy, stoicism the 
@@ -1870,7 +1870,7 @@
 70,1,19,Greek, philosophy, stoicism the references
 71,1,19,Greek, philosophy, stoicism the and
 72,1,19,Greek, philosophy, stoicism the artistic
-73,1,19,Greek, philosophy, stoicism the "stoic"
+73,1,19,Greek, philosophy, stoicism the  stoic 
 74,1,19,Greek, philosophy, stoicism the all
 75,1,19,Greek, philosophy, stoicism the Actual
 76,1,19,Greek, philosophy, stoicism the relevant
@@ -1882,7 +1882,7 @@
 82,1,19,Greek, philosophy, stoicism contemporary contemporary
 83,1,19,Greek, philosophy, stoicism contemporary interest
 84,1,19,Greek, philosophy, stoicism contemporary stoic
-85,1,19,Greek, philosophy, stoicism contemporary stoicism?
+85,1,19,Greek, philosophy, stoicism contemporary stoicism 
 86,1,19,Greek, philosophy, stoicism contemporary are
 87,1,19,Greek, philosophy, stoicism contemporary plays
 88,1,19,Greek, philosophy, stoicism contemporary 
@@ -1896,7 +1896,7 @@
 96,1,19,Greek, philosophy, stoicism contemporary references
 97,1,19,Greek, philosophy, stoicism contemporary and
 98,1,19,Greek, philosophy, stoicism contemporary artistic
-99,1,19,Greek, philosophy, stoicism contemporary "stoic"
+99,1,19,Greek, philosophy, stoicism contemporary  stoic 
 100,1,19,Greek, philosophy, stoicism contemporary all
 1,1,20,inventions, scientific discoveries
 2,1,20,inventions, scientific discoveries been
@@ -1921,7 +1921,7 @@
 21,1,20,inventions, scientific discoveries in
 22,1,20,inventions, scientific discoveries occurring
 23,1,20,inventions, scientific discoveries as
-24,1,20,inventions, scientific discoveries made?
+24,1,20,inventions, scientific discoveries made 
 25,1,20,inventions, scientific discoveries a
 26,1,20,inventions, scientific discoveries indicate
 27,1,20,inventions, scientific discoveries any
@@ -1929,9 +1929,9 @@
 29,1,20,inventions, scientific discoveries relevant
 30,1,20,inventions, scientific discoveries considered
 31,1,20,inventions, scientific discoveries have
-32,1,20,inventions, scientific discoveries "new"
+32,1,20,inventions, scientific discoveries  new 
 33,1,20,inventions, scientific discoveries invention
-34,1,20,inventions, scientific discoveries "recent"
+34,1,20,inventions, scientific discoveries  recent 
 35,1,20,inventions, scientific discoveries or
 36,1,20,inventions, scientific discoveries What
 37,1,20,inventions, scientific discoveries scientific
@@ -1958,7 +1958,7 @@
 58,1,20,inventions, scientific discoveries been in
 59,1,20,inventions, scientific discoveries been occurring
 60,1,20,inventions, scientific discoveries been as
-61,1,20,inventions, scientific discoveries been made?
+61,1,20,inventions, scientific discoveries been made 
 62,1,20,inventions, scientific discoveries been a
 63,1,20,inventions, scientific discoveries been indicate
 64,1,20,inventions, scientific discoveries been any
@@ -1966,9 +1966,9 @@
 66,1,20,inventions, scientific discoveries been relevant
 67,1,20,inventions, scientific discoveries been considered
 68,1,20,inventions, scientific discoveries been have
-69,1,20,inventions, scientific discoveries been "new"
+69,1,20,inventions, scientific discoveries been  new 
 70,1,20,inventions, scientific discoveries been invention
-71,1,20,inventions, scientific discoveries been "recent"
+71,1,20,inventions, scientific discoveries been  recent 
 72,1,20,inventions, scientific discoveries been or
 73,1,20,inventions, scientific discoveries been What
 74,1,20,inventions, scientific discoveries been scientific
@@ -1995,7 +1995,7 @@
 95,1,20,inventions, scientific discoveries defined in
 96,1,20,inventions, scientific discoveries defined occurring
 97,1,20,inventions, scientific discoveries defined as
-98,1,20,inventions, scientific discoveries defined made?
+98,1,20,inventions, scientific discoveries defined made 
 99,1,20,inventions, scientific discoveries defined a
 100,1,20,inventions, scientific discoveries defined indicate
 1,1,21,heroic acts
@@ -2143,7 +2143,7 @@
 43,1,22,women clergy be
 44,1,22,women clergy countries
 45,1,22,women clergy approved
-46,1,22,women clergy persons?
+46,1,22,women clergy persons 
 47,1,22,women clergy position
 48,1,22,women clergy relevant
 49,1,22,women clergy installed
@@ -2192,7 +2192,7 @@
 92,1,22,women clergy document be
 93,1,22,women clergy document countries
 94,1,22,women clergy document approved
-95,1,22,women clergy document persons?
+95,1,22,women clergy document persons 
 96,1,22,women clergy document position
 97,1,22,women clergy document relevant
 98,1,22,women clergy document installed
@@ -2798,106 +2798,106 @@
 98,1,28,declining middle class in U.S. the or
 99,1,28,declining middle class in U.S. the for
 100,1,28,declining middle class in U.S. the documents
-1,1,29,"Women on 20s"
-2,1,29,"Women on 20s" Andrew
-3,1,29,"Women on 20s" to
-4,1,29,"Women on 20s" the
-5,1,29,"Women on 20s" replace
-6,1,29,"Women on 20s" Relevant
-7,1,29,"Women on 20s" descriptions
-8,1,29,"Women on 20s" describe
-9,1,29,"Women on 20s" campaign
-10,1,29,"Women on 20s" on
-11,1,29,"Women on 20s" are
-12,1,29,"Women on 20s" irony
-13,1,29,"Women on 20s" Jackson
-14,1,29,"Women on 20s" U
-15,1,29,"Women on 20s" S
-16,1,29,"Women on 20s" 
-17,1,29,"Women on 20s" Find
-18,1,29,"Women on 20s" Tubman
-19,1,29,"Women on 20s" also
-20,1,29,"Women on 20s" $20
-21,1,29,"Women on 20s" appearing
-22,1,29,"Women on 20s" and
-23,1,29,"Women on 20s" con
-24,1,29,"Women on 20s" a
-25,1,29,"Women on 20s" Harriet
-26,1,29,"Women on 20s" "Women
-27,1,29,"Women on 20s" reactions
-28,1,29,"Women on 20s" Discussion
-29,1,29,"Women on 20s" relevant
-30,1,29,"Women on 20s" replacing
-31,1,29,"Women on 20s" 20s"
-32,1,29,"Women on 20s" bill
-33,1,29,"Women on 20s" documents
-34,1,29,"Women on 20s" pro
-35,1,29,"Women on 20s" idea
-36,1,29,"Women on 20s" of
-37,1,29,"Women on 20s" female
-38,1,29,"Women on 20s" select
-39,1,29,"Women on 20s" Andrew Andrew
-40,1,29,"Women on 20s" Andrew to
-41,1,29,"Women on 20s" Andrew the
-42,1,29,"Women on 20s" Andrew replace
-43,1,29,"Women on 20s" Andrew Relevant
-44,1,29,"Women on 20s" Andrew descriptions
-45,1,29,"Women on 20s" Andrew describe
-46,1,29,"Women on 20s" Andrew campaign
-47,1,29,"Women on 20s" Andrew on
-48,1,29,"Women on 20s" Andrew are
-49,1,29,"Women on 20s" Andrew irony
-50,1,29,"Women on 20s" Andrew Jackson
-51,1,29,"Women on 20s" Andrew U
-52,1,29,"Women on 20s" Andrew S
-53,1,29,"Women on 20s" Andrew 
-54,1,29,"Women on 20s" Andrew Find
-55,1,29,"Women on 20s" Andrew Tubman
-56,1,29,"Women on 20s" Andrew also
-57,1,29,"Women on 20s" Andrew $20
-58,1,29,"Women on 20s" Andrew appearing
-59,1,29,"Women on 20s" Andrew and
-60,1,29,"Women on 20s" Andrew con
-61,1,29,"Women on 20s" Andrew a
-62,1,29,"Women on 20s" Andrew Harriet
-63,1,29,"Women on 20s" Andrew "Women
-64,1,29,"Women on 20s" Andrew reactions
-65,1,29,"Women on 20s" Andrew Discussion
-66,1,29,"Women on 20s" Andrew relevant
-67,1,29,"Women on 20s" Andrew replacing
-68,1,29,"Women on 20s" Andrew 20s"
-69,1,29,"Women on 20s" Andrew bill
-70,1,29,"Women on 20s" Andrew documents
-71,1,29,"Women on 20s" Andrew pro
-72,1,29,"Women on 20s" Andrew idea
-73,1,29,"Women on 20s" Andrew of
-74,1,29,"Women on 20s" Andrew female
-75,1,29,"Women on 20s" Andrew select
-76,1,29,"Women on 20s" to Andrew
-77,1,29,"Women on 20s" to to
-78,1,29,"Women on 20s" to the
-79,1,29,"Women on 20s" to replace
-80,1,29,"Women on 20s" to Relevant
-81,1,29,"Women on 20s" to descriptions
-82,1,29,"Women on 20s" to describe
-83,1,29,"Women on 20s" to campaign
-84,1,29,"Women on 20s" to on
-85,1,29,"Women on 20s" to are
-86,1,29,"Women on 20s" to irony
-87,1,29,"Women on 20s" to Jackson
-88,1,29,"Women on 20s" to U
-89,1,29,"Women on 20s" to S
-90,1,29,"Women on 20s" to 
-91,1,29,"Women on 20s" to Find
-92,1,29,"Women on 20s" to Tubman
-93,1,29,"Women on 20s" to also
-94,1,29,"Women on 20s" to $20
-95,1,29,"Women on 20s" to appearing
-96,1,29,"Women on 20s" to and
-97,1,29,"Women on 20s" to con
-98,1,29,"Women on 20s" to a
-99,1,29,"Women on 20s" to Harriet
-100,1,29,"Women on 20s" to "Women
+1,1,29, Women on 20s 
+2,1,29, Women on 20s  Andrew
+3,1,29, Women on 20s  to
+4,1,29, Women on 20s  the
+5,1,29, Women on 20s  replace
+6,1,29, Women on 20s  Relevant
+7,1,29, Women on 20s  descriptions
+8,1,29, Women on 20s  describe
+9,1,29, Women on 20s  campaign
+10,1,29, Women on 20s  on
+11,1,29, Women on 20s  are
+12,1,29, Women on 20s  irony
+13,1,29, Women on 20s  Jackson
+14,1,29, Women on 20s  U
+15,1,29, Women on 20s  S
+16,1,29, Women on 20s  
+17,1,29, Women on 20s  Find
+18,1,29, Women on 20s  Tubman
+19,1,29, Women on 20s  also
+20,1,29, Women on 20s  $20
+21,1,29, Women on 20s  appearing
+22,1,29, Women on 20s  and
+23,1,29, Women on 20s  con
+24,1,29, Women on 20s  a
+25,1,29, Women on 20s  Harriet
+26,1,29, Women on 20s   Women
+27,1,29, Women on 20s  reactions
+28,1,29, Women on 20s  Discussion
+29,1,29, Women on 20s  relevant
+30,1,29, Women on 20s  replacing
+31,1,29, Women on 20s  20s 
+32,1,29, Women on 20s  bill
+33,1,29, Women on 20s  documents
+34,1,29, Women on 20s  pro
+35,1,29, Women on 20s  idea
+36,1,29, Women on 20s  of
+37,1,29, Women on 20s  female
+38,1,29, Women on 20s  select
+39,1,29, Women on 20s  Andrew Andrew
+40,1,29, Women on 20s  Andrew to
+41,1,29, Women on 20s  Andrew the
+42,1,29, Women on 20s  Andrew replace
+43,1,29, Women on 20s  Andrew Relevant
+44,1,29, Women on 20s  Andrew descriptions
+45,1,29, Women on 20s  Andrew describe
+46,1,29, Women on 20s  Andrew campaign
+47,1,29, Women on 20s  Andrew on
+48,1,29, Women on 20s  Andrew are
+49,1,29, Women on 20s  Andrew irony
+50,1,29, Women on 20s  Andrew Jackson
+51,1,29, Women on 20s  Andrew U
+52,1,29, Women on 20s  Andrew S
+53,1,29, Women on 20s  Andrew 
+54,1,29, Women on 20s  Andrew Find
+55,1,29, Women on 20s  Andrew Tubman
+56,1,29, Women on 20s  Andrew also
+57,1,29, Women on 20s  Andrew $20
+58,1,29, Women on 20s  Andrew appearing
+59,1,29, Women on 20s  Andrew and
+60,1,29, Women on 20s  Andrew con
+61,1,29, Women on 20s  Andrew a
+62,1,29, Women on 20s  Andrew Harriet
+63,1,29, Women on 20s  Andrew  Women
+64,1,29, Women on 20s  Andrew reactions
+65,1,29, Women on 20s  Andrew Discussion
+66,1,29, Women on 20s  Andrew relevant
+67,1,29, Women on 20s  Andrew replacing
+68,1,29, Women on 20s  Andrew 20s 
+69,1,29, Women on 20s  Andrew bill
+70,1,29, Women on 20s  Andrew documents
+71,1,29, Women on 20s  Andrew pro
+72,1,29, Women on 20s  Andrew idea
+73,1,29, Women on 20s  Andrew of
+74,1,29, Women on 20s  Andrew female
+75,1,29, Women on 20s  Andrew select
+76,1,29, Women on 20s  to Andrew
+77,1,29, Women on 20s  to to
+78,1,29, Women on 20s  to the
+79,1,29, Women on 20s  to replace
+80,1,29, Women on 20s  to Relevant
+81,1,29, Women on 20s  to descriptions
+82,1,29, Women on 20s  to describe
+83,1,29, Women on 20s  to campaign
+84,1,29, Women on 20s  to on
+85,1,29, Women on 20s  to are
+86,1,29, Women on 20s  to irony
+87,1,29, Women on 20s  to Jackson
+88,1,29, Women on 20s  to U
+89,1,29, Women on 20s  to S
+90,1,29, Women on 20s  to 
+91,1,29, Women on 20s  to Find
+92,1,29, Women on 20s  to Tubman
+93,1,29, Women on 20s  to also
+94,1,29, Women on 20s  to $20
+95,1,29, Women on 20s  to appearing
+96,1,29, Women on 20s  to and
+97,1,29, Women on 20s  to con
+98,1,29, Women on 20s  to a
+99,1,29, Women on 20s  to Harriet
+100,1,29, Women on 20s  to  Women
 1,1,30,eating invasive species
 2,1,30,eating invasive species 
 3,1,30,eating invasive species the
@@ -2914,7 +2914,7 @@
 14,1,30,eating invasive species human
 15,1,30,eating invasive species U
 16,1,30,eating invasive species S
-17,1,30,eating invasive species them?
+17,1,30,eating invasive species them 
 18,1,30,eating invasive species texture
 19,1,30,eating invasive species other
 20,1,30,eating invasive species also
@@ -2923,7 +2923,7 @@
 23,1,30,eating invasive species in
 24,1,30,eating invasive species and
 25,1,30,eating invasive species controlling
-26,1,30,eating invasive species controlling/eradicating
+26,1,30,eating invasive species controlling eradicating
 27,1,30,eating invasive species culinary
 28,1,30,eating invasive species species
 29,1,30,eating invasive species a
@@ -2958,7 +2958,7 @@
 58,1,30,eating invasive species  human
 59,1,30,eating invasive species  U
 60,1,30,eating invasive species  S
-61,1,30,eating invasive species  them?
+61,1,30,eating invasive species  them 
 62,1,30,eating invasive species  texture
 63,1,30,eating invasive species  other
 64,1,30,eating invasive species  also
@@ -2967,7 +2967,7 @@
 67,1,30,eating invasive species  in
 68,1,30,eating invasive species  and
 69,1,30,eating invasive species  controlling
-70,1,30,eating invasive species  controlling/eradicating
+70,1,30,eating invasive species  controlling eradicating
 71,1,30,eating invasive species  culinary
 72,1,30,eating invasive species  species
 73,1,30,eating invasive species  a
@@ -3005,7 +3005,7 @@
 5,1,31,computers and paralyzed people to
 6,1,31,computers and paralyzed people the
 7,1,31,computers and paralyzed people Relevant
-8,1,31,computers and paralyzed people don't
+8,1,31,computers and paralyzed people don t
 9,1,31,computers and paralyzed people who
 10,1,31,computers and paralyzed people use
 11,1,31,computers and paralyzed people How
@@ -3053,7 +3053,7 @@
 53,1,31,computers and paralyzed people of
 54,1,31,computers and paralyzed people though
 55,1,31,computers and paralyzed people direct
-56,1,31,computers and paralyzed people people?
+56,1,31,computers and paralyzed people people 
 57,1,31,computers and paralyzed people with
 58,1,31,computers and paralyzed people show
 59,1,31,computers and paralyzed people improve
@@ -3063,7 +3063,7 @@
 63,1,31,computers and paralyzed people  to
 64,1,31,computers and paralyzed people  the
 65,1,31,computers and paralyzed people  Relevant
-66,1,31,computers and paralyzed people  don't
+66,1,31,computers and paralyzed people  don t
 67,1,31,computers and paralyzed people  who
 68,1,31,computers and paralyzed people  use
 69,1,31,computers and paralyzed people  How
@@ -3311,7 +3311,7 @@
 11,1,34,protect Earth from asteroids on
 12,1,34,protect Earth from asteroids are
 13,1,34,protect Earth from asteroids efforts
-14,1,34,protect Earth from asteroids strikes?
+14,1,34,protect Earth from asteroids strikes 
 15,1,34,protect Earth from asteroids asteroid
 16,1,34,protect Earth from asteroids not
 17,1,34,protect Earth from asteroids protect
@@ -3347,7 +3347,7 @@
 47,1,34,protect Earth from asteroids relevant on
 48,1,34,protect Earth from asteroids relevant are
 49,1,34,protect Earth from asteroids relevant efforts
-50,1,34,protect Earth from asteroids relevant strikes?
+50,1,34,protect Earth from asteroids relevant strikes 
 51,1,34,protect Earth from asteroids relevant asteroid
 52,1,34,protect Earth from asteroids relevant not
 53,1,34,protect Earth from asteroids relevant protect
@@ -3383,7 +3383,7 @@
 83,1,34,protect Earth from asteroids asteroids on
 84,1,34,protect Earth from asteroids asteroids are
 85,1,34,protect Earth from asteroids asteroids efforts
-86,1,34,protect Earth from asteroids asteroids strikes?
+86,1,34,protect Earth from asteroids asteroids strikes 
 87,1,34,protect Earth from asteroids asteroids asteroid
 88,1,34,protect Earth from asteroids asteroids not
 89,1,34,protect Earth from asteroids asteroids protect
@@ -3409,7 +3409,7 @@
 9,1,35,diabetes and toxic chemicals Is
 10,1,35,diabetes and toxic chemicals that
 11,1,35,diabetes and toxic chemicals there
-12,1,35,diabetes and toxic chemicals diabetes?
+12,1,35,diabetes and toxic chemicals diabetes 
 13,1,35,diabetes and toxic chemicals and
 14,1,35,diabetes and toxic chemicals a
 15,1,35,diabetes and toxic chemicals exposure
@@ -3431,7 +3431,7 @@
 31,1,35,diabetes and toxic chemicals to Is
 32,1,35,diabetes and toxic chemicals to that
 33,1,35,diabetes and toxic chemicals to there
-34,1,35,diabetes and toxic chemicals to diabetes?
+34,1,35,diabetes and toxic chemicals to diabetes 
 35,1,35,diabetes and toxic chemicals to and
 36,1,35,diabetes and toxic chemicals to a
 37,1,35,diabetes and toxic chemicals to exposure
@@ -3453,7 +3453,7 @@
 53,1,35,diabetes and toxic chemicals discuss Is
 54,1,35,diabetes and toxic chemicals discuss that
 55,1,35,diabetes and toxic chemicals discuss there
-56,1,35,diabetes and toxic chemicals discuss diabetes?
+56,1,35,diabetes and toxic chemicals discuss diabetes 
 57,1,35,diabetes and toxic chemicals discuss and
 58,1,35,diabetes and toxic chemicals discuss a
 59,1,35,diabetes and toxic chemicals discuss exposure
@@ -3475,7 +3475,7 @@
 75,1,35,diabetes and toxic chemicals diabetes Is
 76,1,35,diabetes and toxic chemicals diabetes that
 77,1,35,diabetes and toxic chemicals diabetes there
-78,1,35,diabetes and toxic chemicals diabetes diabetes?
+78,1,35,diabetes and toxic chemicals diabetes diabetes 
 79,1,35,diabetes and toxic chemicals diabetes and
 80,1,35,diabetes and toxic chemicals diabetes a
 81,1,35,diabetes and toxic chemicals diabetes exposure
@@ -3497,7 +3497,7 @@
 97,1,35,diabetes and toxic chemicals  Is
 98,1,35,diabetes and toxic chemicals  that
 99,1,35,diabetes and toxic chemicals  there
-100,1,35,diabetes and toxic chemicals  diabetes?
+100,1,35,diabetes and toxic chemicals  diabetes 
 1,1,36,car hacking
 2,1,36,car hacking 
 3,1,36,car hacking legislative
@@ -3531,7 +3531,7 @@
 31,1,36,car hacking hacking
 32,1,36,car hacking cars
 33,1,36,car hacking report
-34,1,36,car hacking and/or
+34,1,36,car hacking and or
 35,1,36,car hacking others
 36,1,36,car hacking relevant
 37,1,36,car hacking detect
@@ -3579,7 +3579,7 @@
 79,1,36,car hacking  hacking
 80,1,36,car hacking  cars
 81,1,36,car hacking  report
-82,1,36,car hacking  and/or
+82,1,36,car hacking  and or
 83,1,36,car hacking  others
 84,1,36,car hacking  relevant
 85,1,36,car hacking  detect
@@ -3640,7 +3640,7 @@
 40,1,37,social media and teen suicide being
 41,1,37,social media and teen suicide by
 42,1,37,social media and teen suicide documents
-43,1,37,social media and teen suicide teen's
+43,1,37,social media and teen suicide teen s
 44,1,37,social media and teen suicide be
 45,1,37,social media and teen suicide faced
 46,1,37,social media and teen suicide of
@@ -3685,7 +3685,7 @@
 85,1,37,social media and teen suicide  being
 86,1,37,social media and teen suicide  by
 87,1,37,social media and teen suicide  documents
-88,1,37,social media and teen suicide  teen's
+88,1,37,social media and teen suicide  teen s
 89,1,37,social media and teen suicide  be
 90,1,37,social media and teen suicide  faced
 91,1,37,social media and teen suicide  of
@@ -3803,7 +3803,7 @@
 3,1,39,China one-child impact the
 4,1,39,China one-child impact Relevant
 5,1,39,China one-child impact discussion
-6,1,39,China one-child impact China's
+6,1,39,China one-child impact China s
 7,1,39,China one-child impact structure
 8,1,39,China one-child impact 
 9,1,39,China one-child impact its
@@ -3814,10 +3814,10 @@
 14,1,39,China one-child impact has
 15,1,39,China one-child impact policy
 16,1,39,China one-child impact contain
-17,1,39,China one-child impact and/or
+17,1,39,China one-child impact and or
 18,1,39,China one-child impact will
 19,1,39,China one-child impact impact
-20,1,39,China one-child impact policy?
+20,1,39,China one-child impact policy 
 21,1,39,China one-child impact What
 22,1,39,China one-child impact documents
 23,1,39,China one-child impact of
@@ -3827,7 +3827,7 @@
 27,1,39,China one-child impact been the
 28,1,39,China one-child impact been Relevant
 29,1,39,China one-child impact been discussion
-30,1,39,China one-child impact been China's
+30,1,39,China one-child impact been China s
 31,1,39,China one-child impact been structure
 32,1,39,China one-child impact been 
 33,1,39,China one-child impact been its
@@ -3838,10 +3838,10 @@
 38,1,39,China one-child impact been has
 39,1,39,China one-child impact been policy
 40,1,39,China one-child impact been contain
-41,1,39,China one-child impact been and/or
+41,1,39,China one-child impact been and or
 42,1,39,China one-child impact been will
 43,1,39,China one-child impact been impact
-44,1,39,China one-child impact been policy?
+44,1,39,China one-child impact been policy 
 45,1,39,China one-child impact been What
 46,1,39,China one-child impact been documents
 47,1,39,China one-child impact been of
@@ -3851,7 +3851,7 @@
 51,1,39,China one-child impact the the
 52,1,39,China one-child impact the Relevant
 53,1,39,China one-child impact the discussion
-54,1,39,China one-child impact the China's
+54,1,39,China one-child impact the China s
 55,1,39,China one-child impact the structure
 56,1,39,China one-child impact the 
 57,1,39,China one-child impact the its
@@ -3862,10 +3862,10 @@
 62,1,39,China one-child impact the has
 63,1,39,China one-child impact the policy
 64,1,39,China one-child impact the contain
-65,1,39,China one-child impact the and/or
+65,1,39,China one-child impact the and or
 66,1,39,China one-child impact the will
 67,1,39,China one-child impact the impact
-68,1,39,China one-child impact the policy?
+68,1,39,China one-child impact the policy 
 69,1,39,China one-child impact the What
 70,1,39,China one-child impact the documents
 71,1,39,China one-child impact the of
@@ -3875,7 +3875,7 @@
 75,1,39,China one-child impact Relevant the
 76,1,39,China one-child impact Relevant Relevant
 77,1,39,China one-child impact Relevant discussion
-78,1,39,China one-child impact Relevant China's
+78,1,39,China one-child impact Relevant China s
 79,1,39,China one-child impact Relevant structure
 80,1,39,China one-child impact Relevant 
 81,1,39,China one-child impact Relevant its
@@ -3886,10 +3886,10 @@
 86,1,39,China one-child impact Relevant has
 87,1,39,China one-child impact Relevant policy
 88,1,39,China one-child impact Relevant contain
-89,1,39,China one-child impact Relevant and/or
+89,1,39,China one-child impact Relevant and or
 90,1,39,China one-child impact Relevant will
 91,1,39,China one-child impact Relevant impact
-92,1,39,China one-child impact Relevant policy?
+92,1,39,China one-child impact Relevant policy 
 93,1,39,China one-child impact Relevant What
 94,1,39,China one-child impact Relevant documents
 95,1,39,China one-child impact Relevant of
@@ -4227,7 +4227,7 @@
 27,1,43,eggs in a healthy diet or
 28,1,43,eggs in a healthy diet for
 29,1,43,eggs in a healthy diet documents
-30,1,43,eggs in a healthy diet one's
+30,1,43,eggs in a healthy diet one s
 31,1,43,eggs in a healthy diet relevant relevant
 32,1,43,eggs in a healthy diet relevant document
 33,1,43,eggs in a healthy diet relevant A
@@ -4256,7 +4256,7 @@
 56,1,43,eggs in a healthy diet relevant or
 57,1,43,eggs in a healthy diet relevant for
 58,1,43,eggs in a healthy diet relevant documents
-59,1,43,eggs in a healthy diet relevant one's
+59,1,43,eggs in a healthy diet relevant one s
 60,1,43,eggs in a healthy diet document relevant
 61,1,43,eggs in a healthy diet document document
 62,1,43,eggs in a healthy diet document A
@@ -4285,7 +4285,7 @@
 85,1,43,eggs in a healthy diet document or
 86,1,43,eggs in a healthy diet document for
 87,1,43,eggs in a healthy diet document documents
-88,1,43,eggs in a healthy diet document one's
+88,1,43,eggs in a healthy diet document one s
 89,1,43,eggs in a healthy diet A relevant
 90,1,43,eggs in a healthy diet A document
 91,1,43,eggs in a healthy diet A A
@@ -4322,7 +4322,7 @@
 22,1,44,U.S. age demographics percentage
 23,1,44,U.S. age demographics giving
 24,1,44,U.S. age demographics population
-25,1,44,U.S. age demographics :
+25,1,44,U.S. age demographics  
 26,1,44,U.S. age demographics either
 27,1,44,U.S. age demographics for
 28,1,44,U.S. age demographics or
@@ -4354,7 +4354,7 @@
 54,1,44,U.S. age demographics overall percentage
 55,1,44,U.S. age demographics overall giving
 56,1,44,U.S. age demographics overall population
-57,1,44,U.S. age demographics overall :
+57,1,44,U.S. age demographics overall  
 58,1,44,U.S. age demographics overall either
 59,1,44,U.S. age demographics overall for
 60,1,44,U.S. age demographics overall or
@@ -4386,7 +4386,7 @@
 86,1,44,U.S. age demographics demographic percentage
 87,1,44,U.S. age demographics demographic giving
 88,1,44,U.S. age demographics demographic population
-89,1,44,U.S. age demographics demographic :
+89,1,44,U.S. age demographics demographic  
 90,1,44,U.S. age demographics demographic either
 91,1,44,U.S. age demographics demographic for
 92,1,44,U.S. age demographics demographic or
@@ -4818,7 +4818,7 @@
 18,1,49,Bezos purchases Washington Post his
 19,1,49,Bezos purchases Washington Post about
 20,1,49,Bezos purchases Washington Post 
-21,1,49,Bezos purchases Washington Post Bezos'
+21,1,49,Bezos purchases Washington Post Bezos 
 22,1,49,Bezos purchases Washington Post paper
 23,1,49,Bezos purchases Washington Post will
 24,1,49,Bezos purchases Washington Post reactions
@@ -4852,7 +4852,7 @@
 52,1,49,Bezos purchases Washington Post describing his
 53,1,49,Bezos purchases Washington Post describing about
 54,1,49,Bezos purchases Washington Post describing 
-55,1,49,Bezos purchases Washington Post describing Bezos'
+55,1,49,Bezos purchases Washington Post describing Bezos 
 56,1,49,Bezos purchases Washington Post describing paper
 57,1,49,Bezos purchases Washington Post describing will
 58,1,49,Bezos purchases Washington Post describing reactions
@@ -4886,7 +4886,7 @@
 86,1,49,Bezos purchases Washington Post news his
 87,1,49,Bezos purchases Washington Post news about
 88,1,49,Bezos purchases Washington Post news 
-89,1,49,Bezos purchases Washington Post news Bezos'
+89,1,49,Bezos purchases Washington Post news Bezos 
 90,1,49,Bezos purchases Washington Post news paper
 91,1,49,Bezos purchases Washington Post news will
 92,1,49,Bezos purchases Washington Post news reactions
@@ -4927,7 +4927,7 @@
 27,1,50,ethanol and food prices diversion
 28,1,50,ethanol and food prices with
 29,1,50,ethanol and food prices corn
-30,1,50,ethanol and food prices prices?
+30,1,50,ethanol and food prices prices 
 31,1,50,ethanol and food prices crops crops
 32,1,50,ethanol and food prices crops Does
 33,1,50,ethanol and food prices crops discuss
@@ -4956,7 +4956,7 @@
 56,1,50,ethanol and food prices crops diversion
 57,1,50,ethanol and food prices crops with
 58,1,50,ethanol and food prices crops corn
-59,1,50,ethanol and food prices crops prices?
+59,1,50,ethanol and food prices crops prices 
 60,1,50,ethanol and food prices Does crops
 61,1,50,ethanol and food prices Does Does
 62,1,50,ethanol and food prices Does discuss
@@ -4985,7 +4985,7 @@
 85,1,50,ethanol and food prices Does diversion
 86,1,50,ethanol and food prices Does with
 87,1,50,ethanol and food prices Does corn
-88,1,50,ethanol and food prices Does prices?
+88,1,50,ethanol and food prices Does prices 
 89,1,50,ethanol and food prices discuss crops
 90,1,50,ethanol and food prices discuss Does
 91,1,50,ethanol and food prices discuss discuss

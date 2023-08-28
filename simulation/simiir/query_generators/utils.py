@@ -1,6 +1,10 @@
 import pyterrier as pt
 import re
 
+import pyterrier as pt
+if not pt.started():
+  pt.init()
+
 class IdfProvider():
     
     def __init__(self, index_path, stopwords):

@@ -20,3 +20,5 @@ sqlalchemy
 psycopg2-binary
 faiss-cpu
 gdown
+lightgbm
+fastrank

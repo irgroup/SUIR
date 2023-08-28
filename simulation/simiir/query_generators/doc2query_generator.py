@@ -13,7 +13,7 @@ class Doc2QueryGenerator(BaseQueryGenerator):
     A query generator that selects candidate queries based on doc2query queries from relevant docs
     """
 
-    def __init__(self, stopword_file, query_file, user, background_file=[], index_path='/workspace/index_all_fields_new/data.properties', use_relevant=True, use_filter=True):
+    def __init__(self, stopword_file, query_file, user, background_file=[], index_path='/workspace/indices/wapo_v2/data.properties', use_relevant=True, use_filter=True):
         super(Doc2QueryGenerator, self).__init__(stopword_file, background_file=background_file)
         self.__queries = self.get_queries(query_file)
         self.__user = user

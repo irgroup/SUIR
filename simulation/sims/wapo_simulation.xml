@@ -6,14 +6,15 @@
 			trec_eval="false" />
 	
     <topics>
-        <!--
+        <!-- 
         These are the topics that each simulated user will complete
-        -->
+        
         <topic id="1" filename="/workspace/data/wapo/topics/topic.1" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="2" filename="/workspace/data/wapo/topics/topic.2" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="3" filename="/workspace/data/wapo/topics/topic.3" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="4" filename="/workspace/data/wapo/topics/topic.4" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="5" filename="/workspace/data/wapo/topics/topic.5" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
+        
         <topic id="6" filename="/workspace/data/wapo/topics/topic.6" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="7" filename="/workspace/data/wapo/topics/topic.7" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="8" filename="/workspace/data/wapo/topics/topic.8" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
@@ -52,7 +53,7 @@
         <topic id="38" filename="/workspace/data/wapo/topics/topic.38" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="39" filename="/workspace/data/wapo/topics/topic.39" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="40" filename="/workspace/data/wapo/topics/topic.40" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
-
+        -->
         <topic id="41" filename="/workspace/data/wapo/topics/topic.41" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="42" filename="/workspace/data/wapo/topics/topic.42" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="43" filename="/workspace/data/wapo/topics/topic.43" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
@@ -62,12 +63,15 @@
         <topic id="47" filename="/workspace/data/wapo/topics/topic.47" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="48" filename="/workspace/data/wapo/topics/topic.48" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="49" filename="/workspace/data/wapo/topics/topic.49" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
+        
+        
         <topic id="50" filename="/workspace/data/wapo/topics/topic.50" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
-
+        
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/fixeddepthuser10.xml" />
+        <user configurationFile="/workspace/sims/users/fixeddepthuser10_uqv15.xml"/>
+        
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">
