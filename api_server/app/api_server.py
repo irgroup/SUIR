@@ -33,6 +33,15 @@ class TableQueries(Base):
     def __repr__(self):
         repr_str = f"docno={self.docno}, query={self.querygen}"
         return repr_str
+    
+class WapoQueries(Base):
+    __tablename__ = 'wapo_doc2queries'
+    docno = Column(String, primary_key=True)
+    querygen = Column(ARRAY(Text))
+
+    def __repr__(self):
+        repr_str = f"docno={self.docno}, query={self.querygen}"
+        return repr_str
 
 def get_index_paths():
     indices_paths = [path for path in glob.glob("/app/indices/*") if "readme" not in path]
@@ -57,15 +66,16 @@ def init():
         bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=100)
         print(f"laoded {key} index")
 
-    #engine = create_engine("postgresql://root@postgres:5432/webtables_db")
-    #Session = sessionmaker(bind=engine)
-    #session = Session()
+    engine = create_engine("postgresql://root@postgres:5432/wapo")
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-@app.route("/doc2query/<docno_request>", methods=['GET'])
-def response_d2q(docno_request: str):
+
+@app.route("/doc2query_wapo/<docno_request>", methods=['GET'])
+def response_d2q_wapo(docno_request: str):
     if docno_request:
         docno_request = docno_request.replace("$", "/")
-        result = session.get(TableQueries, docno_request)
+        result = session.get(WapoQueries, docno_request)
         if result:
             result = result.querygen
         else:
@@ -74,7 +84,7 @@ def response_d2q(docno_request: str):
         return "no argument given"
 
     return jsonify(
-        response_d2q=result
+        response_d2q_wapo=result
     )
 
 @app.route("/results_wapo/<query>", methods=['GET'])
@@ -84,37 +94,6 @@ def response_query(query: str):
     global last_query
 
     last_query = query
-    return jsonify(
-        response_query=results.to_dict()
-    )
-
-@app.route("/results_rm3/<rel_docs>", methods=['GET'])
-def response_query_rm3(rel_docs: str):
-    
-    global last_query
-
-    if rel_docs == "no_rels":
-        rel_docs = []
-    else:
-        rel_docs = set([rel_doc.replace("$", "/") for rel_doc in rel_docs.split(',')])
-
-    # push rel docs to the top
-
-    rel_pusher = pt.apply.doc_score(lambda row: 9000 if row['docno'] in rel_docs else row['score'])
-    
-
-    '''
-    test_p = bm25 >> rel_pusher
-    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-        print(test_p.search(last_query))
-    '''
-    print(last_query)
-
-    rm3_pipe = bm25 >> rel_pusher >> pt.rewrite.RM3(index) >> bm25
-    results = rm3_pipe.search(last_query)
-
-    last_query = results['query'][0]
-
     return jsonify(
         response_query=results.to_dict()
     )

@@ -163,3 +163,7 @@ init/
 api_server/app/indices/
 simulation/indices/
 notes
+simulation/data/wapo
+simulation/data/nyt
+simulation/data/d2qs_clean
+simulation/data/d2qs_clean
