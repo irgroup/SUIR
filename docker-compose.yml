@@ -29,5 +29,5 @@ services:
     
     links:
       - postgres
-    #command: python3 /app/api_server.py  
+    command: python3 /app/api_server.py  
     tty: true
