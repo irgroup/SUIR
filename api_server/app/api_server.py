@@ -9,11 +9,15 @@ import pandas as pd
 import gc
 import glob
 
+from pyterrier_t5 import MonoT5ReRanker
+
 app = Flask(__name__)
 Base = declarative_base() 
 session_ds = None
 session_d2q = None
 bm25_models = {}
+mono_t5_pipes = {}
+
 indices = {}
 last_query = None
     
@@ -63,6 +67,7 @@ class NytDoc2Qeury(Base):
 
 def get_index_paths():
     indices_paths = [path for path in glob.glob("/app/indices/*") if "readme" not in path]
+    print()
     index_path_dic = {}
     for path in indices_paths:
         index_path_dic[path.split('/')[-1]] = f"{path}/data.properties"
@@ -77,14 +82,19 @@ def init():
     global session_ds
     global session_d2q
     global indices
+    
+    monoT5 = MonoT5ReRanker(text_field="body", batch_size=32)
 
     index_path_dic = get_index_paths()
     for key, val in index_path_dic.items():
         index_ref = pt.IndexRef.of(val)
         indices[key] = pt.IndexFactory.of(index_ref)
         bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=100)
+        mono_t5_pipes[key] = bm25_models[key] >> pt.text.get_text(index_ref, "body") >> monoT5
+
         print(f"laoded {key} index")
 
+    print(mono_t5_pipes)
     engine_ds = create_engine("postgresql://root@postgres:5432/datasets")
     Session_ds = sessionmaker(bind=engine_ds)
     session_ds = Session_ds()
@@ -96,13 +106,25 @@ def init():
 @app.route("/results_wapo/<query>", methods=['GET'])
 def response_query_wapo(query: str):
     #Sgc.collect()
-    results = bm25_models['wapo_v2'].search(query)
+    results = bm25_models['wapo'].search(query)
     global last_query
 
     last_query = query
     return jsonify(
         response_query_wapo=results.to_dict()
     )
+
+@app.route("/results_wapo_monot5/<query>", methods=['GET'])
+def response_query_wapo_monot5(query: str):
+    #Sgc.collect()
+    results = mono_t5_pipes['wapo'].search(query)
+    global last_query
+
+    last_query = query
+    return jsonify(
+        response_query_wapo_monot5=results.to_dict()
+    )
+
 
 #TODO implement nyt index
 @app.route("/results_nyt/<query>", methods=['GET'])
@@ -114,6 +136,18 @@ def response_query_nyt(query: str):
     last_query = query
     return jsonify(
         response_query_nyt=results.to_dict()
+    )
+
+#TODO implement nyt index
+@app.route("/results_nyt_monot5/<query>", methods=['GET'])
+def response_query_nyt_monot5(query: str):
+    #Sgc.collect()
+    results = mono_t5_pipes['nyt'].search(query)
+    global last_query
+
+    last_query = query
+    return jsonify(
+        response_query_nyt_monot5=results.to_dict()
     )
 
 @app.route("/doc2query_wapo/<docno_request>", methods=['GET'])
