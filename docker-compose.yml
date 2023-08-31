@@ -5,7 +5,7 @@ services:
     image: simulation
     volumes: 
         - /home/ub2010/git/SUIR/simulation:/workspace
-        
+        - /home/ub2010/git/SUIR/api_server/app:/app
     tty: true
     
     links:
@@ -23,6 +23,7 @@ services:
     image: api_server
     volumes:
         - /home/ub2010/git/SUIR/api_server/app:/app
+  
     
     expose:
       - 8080
