@@ -4,12 +4,20 @@ services:
   simulation:
     image: simulation
     volumes: 
-        - /home/ub2010/git/SUIR/simulation:/workspace
-        - /home/ub2010/git/SUIR/api_server/app:/app
+        - ./simulation:/workspace
+        - ./api_server/app:/app
     tty: true
     
     links:
       - postgres
+     
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
   postgres:
     image: postgres:12.1
@@ -22,7 +30,7 @@ services:
   api_server:
     image: api_server
     volumes:
-        - /home/ub2010/git/SUIR/api_server/app:/app
+        - ./api_server/app:/app
   
     
     expose:
