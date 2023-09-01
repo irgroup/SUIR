@@ -13,7 +13,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Date, Text, ARRAY
 from simiir.search_contexts.search_context import SearchContext
 
-from db_utils import WapoEntry, get_wapo_entry
+from db_utils import WapoEntry, NytEntry, get_wapo_entry
 
 Base = declarative_base()
     
@@ -45,25 +45,33 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
     """
 
     """
-    def __init__(self):
+    def __init__(self, corpus, neural=""):
         self._last_response = None
         self._last_query = None
-        
-        conn_string = 'postgresql://root@postgres:5432/' + "wapo"
+        self._corpus = corpus
+        self._neural = neural
+
+        conn_string = 'postgresql://root@postgres:5432/datasets' 
         engine = create_engine(conn_string)
         Session = sessionmaker(bind=engine)
         self._session = Session()
         self._filter_seen_rel = False
         self._search_context = None
+
+        self._entry_class = None
+        if self._corpus == "wapo":
+            self._entry_class = WapoEntry
+        elif self._corpus == "nyt":
+            self._entry_class = NytEntry
     
     def issue_query(self, query, num_results=100):
         """
         Allows one to issue a query to the underlying search engine. 
         """
         
-        url = 'http://172.25.0.4:5000/results_wapo/'
+        url = f'http://127.0.0.1:5001/results_{self._corpus}{self._neural}/'
         url_request = url + query.terms.decode('UTF-8').replace(":", "")
-        _results = fetch_and_parse(url_request).get('response_query') 
+        _results = fetch_and_parse(url_request).get(f'response_query_{self._corpus}{self._neural}') 
         results = pd.DataFrame.from_dict(_results)
  
         response = Response(query_terms=query.terms.decode('UTF-8'), query=query)
@@ -78,17 +86,32 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
                 if _docno in rel_docs:
                     continue
 
-            record = self._session.query(WapoEntry).filter_by(doc_id=_docno).first()
+            record = self._session.query(self._entry_class).filter_by(doc_id=_docno).first()
 
+            #TODO: make this generic for nyt and wapo
             if record:
-                response.add_result(title=record.title,
-                                    url=record.url,
-                                    summary=record.kicker,
-                                    docid=_docno,
-                                    rank=result[1]['rank'] + 1,
-                                    score=result[1].score,
-                                    content=record.body,
+                title = None
+                if self._corpus == 'wapo':
+                    title = record.title
+                elif self._corpus == 'nyt':
+                    title = record.headline
+
+                response.add_result(title=title, 
+                                    docid=_docno, 
+                                    rank=result[1]['rank'] + 1, 
+                                    score=result[1].score, 
+                                    content=record.body, 
                                     whooshid=_docno)
+
+
+            #    response.add_result(title=record.title,
+            #                        url=record.url,
+            #                        summary=record.kicker,
+            #                        docid=_docno,
+            #                        rank=result[1]['rank'] + 1,
+            #                       score=result[1].score,
+            #                        content=record.body,
+            #                        whooshid=_docno)
             
         response.result_total = len(results)
         
@@ -101,9 +124,15 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
         """
         Retrieves a Document object for the given document specified by parameter document_id.
         """
+
+        record = self._session.query(self._entry_class).filter_by(doc_id=document_id.decode('utf-8')).first()
         
-        record = self._session.query(WapoEntry).filter_by(doc_id=document_id.decode('utf-8')).first()
-        title = record.title
+        title = None
+        if self._corpus == 'wapo':
+            title = record.title
+        elif self._corpus == 'nyt':
+            title = record.headline
+
         content = record.body
         document = Document(id=document_id, title=title, content=content, doc_id=document_id)
         

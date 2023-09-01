@@ -83,18 +83,17 @@ def init():
     global session_d2q
     global indices
     
-    monoT5 = MonoT5ReRanker(text_field="body", batch_size=32)
+    monoT5 = MonoT5ReRanker(text_field="body", batch_size=50)
 
     index_path_dic = get_index_paths()
     for key, val in index_path_dic.items():
         index_ref = pt.IndexRef.of(val)
         indices[key] = pt.IndexFactory.of(index_ref)
-        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=100)
+        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=50)
         mono_t5_pipes[key] = bm25_models[key] >> pt.text.get_text(index_ref, "body") >> monoT5
 
         print(f"laoded {key} index")
 
-    print(mono_t5_pipes)
     engine_ds = create_engine("postgresql://root@postgres:5432/datasets")
     Session_ds = sessionmaker(bind=engine_ds)
     session_ds = Session_ds()

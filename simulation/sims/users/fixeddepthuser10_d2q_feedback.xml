@@ -6,18 +6,19 @@
         <attribute name="states" type="string" value="" is_argument="true" />
     </algorithm>
 	
-	<queryGenerator class="Doc2QueryGeneratorWapo">
+	<queryGenerator class="Doc2QueryGeneratorNews">
         <attribute name="stopword_file" type="string" value="/workspace/data/stopword-list.txt" is_argument="true" />
 		<attribute name="query_file" type="string" value="/workspace/data/wapo/title_queries" is_argument="true" />
         <attribute name="user" type="string" value="1" is_argument="true" />
 		<attribute name="use_relevant" type="boolean" value="True" is_argument="true" />
+		<attribute name="corpus" type="string" value="wapo" is_argument="true" />
     </queryGenerator>
 
 	<textClassifiers>
 		<snippetClassifier class="StochasticInformedTrecTextClassifier">
             <attribute name="qrel_file" type="string" value="/workspace/data/wapo/wapo_qrels" is_argument="true" />
             <attribute name="rprob" type="float" value="1.0" is_argument="true" />
-            <attribute name="nprob" type="float" value="0.0" is_argument="true" />
+            <attribute name="nprob" type="float" value="0.3" is_argument="true" />
 			<attribute name="data_handler" type="integer" value="0" is_argument="false" />
 		</snippetClassifier>
 

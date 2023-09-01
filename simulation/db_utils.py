@@ -21,6 +21,17 @@ class WapoEntry(Base):
         
         return repr_str
     
+class NytEntry(Base):
+    __tablename__ = 'nyt'
+    doc_id = Column(String, primary_key=True)
+    headline = Column(String)
+    body = Column(String)
+    
+    def __repr__(self):
+        repr_str = f"doc_id={self.doc_id}, headline={self.headline}, body={self.body}"
+
+        return repr_str
+    
 class WapoQueries(Base):
     __tablename__ = 'wapo_doc2queries'
     docno = Column(String, primary_key=True)

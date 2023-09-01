@@ -8,17 +8,20 @@ import re
 import pyterrier as pt
 from .utils import IdfProvider, get_stopwords, filter_keywords
 
-class Doc2QueryGeneratorWapo(BaseQueryGenerator):
+class Doc2QueryGeneratorNews(BaseQueryGenerator):
     """
-    A query generator that selects candidate queries based on doc2query queries from relevant docs
+    A query generator that selects candidate queries based on doc2query queries from seen relevant or all seen docs
     """
 
-    def __init__(self, stopword_file, query_file, user, background_file=[], index_path='/workspace/indices/wapo_v2/data.properties', use_relevant=True, use_filter=True):
-        super(Doc2QueryGeneratorWapo, self).__init__(stopword_file, background_file=background_file)
+    def __init__(self, stopword_file, query_file, user, background_file=[], use_relevant=True, use_filter=True, corpus="dummy"):
+        super(Doc2QueryGeneratorNews, self).__init__(stopword_file, background_file=background_file)
+        self.__corpus = corpus
+        self.__index_path=f'/app/indices/{self.__corpus}/data.properties'
+        
         self.__queries = self.get_queries(query_file)
         self.__user = user
         self.__use_relevant = use_relevant
-        self.__idf_provider = IdfProvider(index_path, get_stopwords())
+        self.__idf_provider = IdfProvider(self.__index_path, get_stopwords())
         self._user_filter = use_filter
 
     def get_queries(self, query_file):
@@ -106,9 +109,9 @@ class Doc2QueryGeneratorWapo(BaseQueryGenerator):
         for doc in docs:
             if not doc.doc_id in used_docs:
                 docno = str(doc.doc_id)[2:-1].replace("/", "$")
-                url = f"http://172.25.0.4:5000/doc2query_wapo/{docno}"
+                url = f"http://127.0.0.1:5001/doc2query_{self.__corpus}/{docno}"
 
-                for query_str in self.fetch_and_parse(url)['response_d2q_wapo']:
+                for query_str in self.fetch_and_parse(url)[f'response_d2q_{self.__corpus}']:
                     keywords += query_str.split(" ")
 
                 search_context.add_used_doc(doc.doc_id)
