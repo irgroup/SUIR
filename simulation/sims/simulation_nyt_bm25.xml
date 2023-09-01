@@ -68,7 +68,7 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/fixeddepthuser10_d2q_feedback.xml"/>
+        <user configurationFile="/workspace/sims/users/fixeddepthuser10_d2q_feedback_nyt.xml"/>
         
     </users>
 
