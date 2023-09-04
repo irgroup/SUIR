@@ -59,7 +59,7 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/fixeddepthuser10_d2q_feedback_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp.xml"/>
         
     </users>
 
@@ -67,7 +67,7 @@
         <!--
         This is the search interface that the simulated users will interact with
         -->
-		<attribute name="index_dir" type="string" value="" is_argument="false" />
+	<attribute name="index_dir" type="string" value="" is_argument="false" />
         <attribute name="corpus" type="string" value="wapo" is_argument="true" />
         <attribute name="neural" type="string" value="_monot5" is_argument="true" />
 	</searchInterface>
