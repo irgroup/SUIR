@@ -15,4 +15,5 @@ RUN pip install -r requirements.txt
 RUN pip install --upgrade git+https://github.com/terrier-org/pyterrier.git#egg=python-terrier
                                         
 RUN pip install -U pip setuptools wheel
-
+RUN pip install --upgrade git+https://github.com/terrierteam/pyterrier_t5.git
+RUN pip install protobuf
