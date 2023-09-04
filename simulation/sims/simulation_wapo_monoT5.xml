@@ -8,7 +8,7 @@
     <topics>
         <!-- 
         These are the topics that each simulated user will complete
-        
+        -->
         <topic id="1" filename="/workspace/data/wapo/topics/topic.1" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="2" filename="/workspace/data/wapo/topics/topic.2" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="3" filename="/workspace/data/wapo/topics/topic.3" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
@@ -53,7 +53,7 @@
         <topic id="38" filename="/workspace/data/wapo/topics/topic.38" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="39" filename="/workspace/data/wapo/topics/topic.39" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="40" filename="/workspace/data/wapo/topics/topic.40" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
-        -->
+        
         <topic id="41" filename="/workspace/data/wapo/topics/topic.41" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="42" filename="/workspace/data/wapo/topics/topic.42" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
         <topic id="43" filename="/workspace/data/wapo/topics/topic.43" qrelsFilename="/workspace/data/wapo/wapo_qrels" />
@@ -68,7 +68,7 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/fixeddepthuser10_d2q_feedback.xml"/>
+        <user configurationFile="/workspace/sims/users/fixeddepthuser10_d2q_feedback_wapo.xml"/>
         
     </users>
 
