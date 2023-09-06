@@ -76,7 +76,7 @@ def get_index_paths():
 
 def init():   
     if not pt.started():
-        pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+        pt.init()
 
     global bm25_models
     global session_ds
