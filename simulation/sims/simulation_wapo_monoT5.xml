@@ -1,11 +1,12 @@
 <simulationConfiguration id="wapo_monoT5">
 	
-	<output baseDirectory="/workspace/sims/output_3070/"
+	<output baseDirectory="/workspace/sims/output/"
 			saveInteractionLog="true"
 			saveRelevanceJudgments="true"
 			trec_eval="false" />
 	
-    <topics>           
+    <topics>   
+            <!--    
 	    <topic id="321" filename="/workspace/data/wapo/topics/topic.321" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
             <topic id="336" filename="/workspace/data/wapo/topics/topic.336" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
             <topic id="341" filename="/workspace/data/wapo/topics/topic.341" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
@@ -55,6 +56,7 @@
             <topic id="822" filename="/workspace/data/wapo/topics/topic.822" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
             <topic id="823" filename="/workspace/data/wapo/topics/topic.823" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
             <topic id="824" filename="/workspace/data/wapo/topics/topic.824" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            -->  
             <topic id="825" filename="/workspace/data/wapo/topics/topic.825" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
     </topics>
     
