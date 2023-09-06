@@ -1,4 +1,4 @@
-<simulationConfiguration id="wapo_monoT5">
+<simulationConfiguration id="wapo-monoT5">
 	
 	<output baseDirectory="/workspace/sims/output/"
 			saveInteractionLog="true"

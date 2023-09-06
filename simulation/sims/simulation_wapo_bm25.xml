@@ -1,4 +1,4 @@
-<simulationConfiguration id="wapo_bm25">
+<simulationConfiguration id="wapo-bm25">
 	
 	<output baseDirectory="/workspace/sims/output/"
 			saveInteractionLog="true"

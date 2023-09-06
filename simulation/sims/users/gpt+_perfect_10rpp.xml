@@ -1,4 +1,4 @@
-<userConfiguration id="GPT+_perfect_10rpp">
+<userConfiguration id="GPT+-perfect-10rpp">
 
 	<algorithm class="MarkovChain">
         <attribute name="model_type" type="string" value="None" is_argument="true" />
