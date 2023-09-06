@@ -72,7 +72,7 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
         url = f'http://127.0.0.1:5001/results_{self._corpus}{self._neural}/'
         url_request = url + query.terms.decode('UTF-8').replace(":", "")
         _results = fetch_and_parse(url_request).get(f'response_query_{self._corpus}{self._neural}') 
-        results = pd.DataFrame.from_dict(_results).sort_values(by=['score'])
+        results = pd.DataFrame.from_dict(_results).sort_values(by=['score'], ascending=False)
         
         response = Response(query_terms=query.terms.decode('UTF-8'), query=query)
         
