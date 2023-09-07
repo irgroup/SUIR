@@ -1,6 +1,6 @@
 <simulationConfiguration id="wapo-monoT5">
 	
-	<output baseDirectory="/workspace/sims/output/"
+	<output baseDirectory="/workspace/sims/output_cut200/"
 			saveInteractionLog="true"
 			saveRelevanceJudgments="true"
 			trec_eval="false" />
