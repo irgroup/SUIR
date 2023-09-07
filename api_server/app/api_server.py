@@ -16,6 +16,7 @@ Base = declarative_base()
 session_ds = None
 session_d2q = None
 bm25_models = {}
+snippet_models = {}
 mono_t5_pipes = {}
 
 indices = {}
@@ -74,11 +75,24 @@ def get_index_paths():
 
     return index_path_dic
 
+def wapo_doc(docno_request):
+    docno_request = docno_request.replace("$", "/")
+    result = session_ds.get(WapoEntry, docno_request)
+
+    return result
+
+def nyt_doc(docno_request):
+    docno_request = docno_request.replace("$", "/")
+    result = session_ds.get(NytEntry, docno_request)
+
+    return result
+
 def init():   
     if not pt.started():
-        pt.init()
+        pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
 
     global bm25_models
+    global snippet_models
     global session_ds
     global session_d2q
     global indices
@@ -89,8 +103,42 @@ def init():
     for key, val in index_path_dic.items():
         index_ref = pt.IndexRef.of(val)
         indices[key] = pt.IndexFactory.of(index_ref)
-        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=200)
+        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=50)
         mono_t5_pipes[key] = bm25_models[key] >> pt.text.get_text(index_ref, "body") >> monoT5
+
+        # Snippet pipe - start
+        psg_scorer = (
+            pt.text.sliding(text_attr='text', length=15, prepend_attr=None)
+            #     >> pt.text.scorer(body_attr="text", wmodel='Tf', takes='docs')
+            >> pt.text.scorer(body_attr='text', wmodel='BM25', takes='docs', background_index=indices[key])
+        )
+
+        title_tf = pt.text.scorer(body_attr="title", wmodel="Tf")
+        summary_tf = pt.text.scorer(body_attr="summary", wmodel="Tf")
+        title_bm25 = pt.text.scorer(body_attr="title", wmodel="BM25", background_index=indices[key])
+        summary_bm25 = pt.text.scorer(body_attr="summary", wmodel="BM25", background_index=indices[key])
+
+        if key == 'wapo':
+            title = pt.apply.title(lambda row: wapo_doc(row["docno"]).title)
+            body = pt.apply.text(lambda row: wapo_doc(row["docno"]).body)
+
+        if key == 'nyt':
+            title = pt.apply.title(lambda row: nyt_doc(row["docno"]).headline)
+            body = pt.apply.text(lambda row: nyt_doc(row["docno"]).body)
+
+        bm25 = pt.BatchRetrieve(indices['wapo'], wmodel='BM25', num_results=50)
+
+        # 1) get bm25 ranking, headlines, and full texts, make summaries from full texts
+        # 2) get term frequencies of headlines and summaries wrt. query string
+        # 3) get bm25 scores of headlines and summaries wrt. query string
+        # 4) reset ranks to bm25 scores
+        snippet_pipe = bm25 >> pt.apply.rename({'score':'score_bm25'}) >> title >> body >> pt.text.snippets(psg_scorer) >> \
+        title_tf >> pt.apply.rename({'score':'title_tf'}) >> summary_tf >> pt.apply.rename({'score':'summary_tf'}) >> \
+        title_bm25 >> pt.apply.rename({'score':'title_bm25'}) >> summary_bm25 >> pt.apply.rename({'score':'summary_bm25'}) >> \
+        pt.apply.rank(drop=True) >> pt.apply.rank(lambda row: row.name)
+
+        snippet_models[key] = snippet_pipe
+        # snippet pipe - end
 
         print(f"laoded {key} index")
 
@@ -107,6 +155,19 @@ def response_query_wapo(query: str):
     #Sgc.collect()
     results = bm25_models['wapo'].search(query)
     global last_query
+
+    last_query = query
+    return jsonify(
+        response_query_wapo=results.to_dict()
+    )
+
+@app.route("/results_wapo_snippet/<query>", methods=['GET'])
+def response_query_wapo_snippet(query: str):
+    #Sgc.collect()
+    
+    global last_query
+
+    results = snippet_models['wapo'].search(query)
 
     last_query = query
     return jsonify(
@@ -131,6 +192,19 @@ def response_query_nyt(query: str):
     #Sgc.collect()
     results = bm25_models['nyt'].search(query)
     global last_query
+
+    last_query = query
+    return jsonify(
+        response_query_nyt=results.to_dict()
+    )
+
+@app.route("/results_nyt_snippet/<query>", methods=['GET'])
+def response_query_nyt_snippet(query: str):
+    #Sgc.collect()
+    
+    global last_query
+
+    results = snippet_models['nyt'].search(query)
 
     last_query = query
     return jsonify(
