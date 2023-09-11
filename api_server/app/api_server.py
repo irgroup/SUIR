@@ -126,7 +126,7 @@ def init():
             title = pt.apply.title(lambda row: nyt_doc(row["docno"]).headline)
             body = pt.apply.text(lambda row: nyt_doc(row["docno"]).body)
 
-        bm25 = pt.BatchRetrieve(indices['wapo'], wmodel='BM25', num_results=50)
+        bm25 = pt.BatchRetrieve(indices[key], wmodel='BM25', num_results=50)
 
         # 1) get bm25 ranking, headlines, and full texts, make summaries from full texts
         # 2) get term frequencies of headlines and summaries wrt. query string

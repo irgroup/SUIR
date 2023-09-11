@@ -85,7 +85,7 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
                 rel_docs = set([str(doc.doc_id)[2:-1] for doc in self._search_context.get_relevant_documents()])
                 if _docno in rel_docs:
                     continue
-
+            
             record = self._session.query(self._entry_class).filter_by(doc_id=_docno).first()
 
             #TODO: make this generic for nyt and wapo

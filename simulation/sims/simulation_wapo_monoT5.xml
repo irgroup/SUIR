@@ -61,7 +61,7 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml"/>
         
     </users>
 
