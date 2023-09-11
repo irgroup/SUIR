@@ -103,7 +103,7 @@ def init():
     for key, val in index_path_dic.items():
         index_ref = pt.IndexRef.of(val)
         indices[key] = pt.IndexFactory.of(index_ref)
-        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=500)
+        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=50)
         mono_t5_pipes[key] = bm25_models[key] >> pt.text.get_text(index_ref, "body") >> monoT5
 
         # Snippet pipe - start
