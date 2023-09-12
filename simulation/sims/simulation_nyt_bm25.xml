@@ -72,8 +72,8 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/>
-        
+        <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> -->
+         <user configurationFile="/workspace/sims/users/justfirst_perfect_10rpp_nyt.xml"/>
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">

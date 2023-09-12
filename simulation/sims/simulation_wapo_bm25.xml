@@ -64,8 +64,8 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml"/>
-        
+        <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml"/> -->
+         <user configurationFile="/workspace/sims/users/justfirst_perfect_10rpp_wapo.xml"/>
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">

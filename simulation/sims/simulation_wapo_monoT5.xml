@@ -1,6 +1,6 @@
 <simulationConfiguration id="wapo-monoT5">
 	
-	<output baseDirectory="/workspace/sims/output_cut200/"
+	<output baseDirectory="/workspace/sims/output/"
 			saveInteractionLog="true"
 			saveRelevanceJudgments="true"
 			trec_eval="false" />
@@ -61,8 +61,8 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml"/>
-        
+    <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml"/> -->
+           <user configurationFile="/workspace/sims/users/justfirst_perfect_10rpp_wapo.xml"/>
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">
