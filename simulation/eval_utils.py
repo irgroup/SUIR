@@ -78,7 +78,7 @@ def fixed_combinations(fixed_list, level_index, sim, levels, log_root_path, topi
             query_type = cl[1]
             user = cl[2]
             crit = cl[3]
-            if not os.path.isfile(log_root_path + sim + "-" + ranking + "-" + str(next(iter(topics_to_analyze))) + "-" + query_type + "-" + user + "-" + crit + ".log"):
+            if not os.path.isfile(log_root_path + sim + "-" + ranking + "-" + str(topics_to_analyze[0]) + "-" + query_type + "-" + user + "-" + crit + ".log"):
                 p = False
         if p == True:
             for lev in existing_l:
@@ -110,7 +110,7 @@ def dfl_sdcg(level, level_eval_all, querynumber):
 
     return df_l
 
-def dfl_effeff(level, level_eval_all, querynumber):
+def dfl_effeff(level, level_eval_all):
     df_l = {}
 
     for l in level:
@@ -142,9 +142,9 @@ def lineplot_sdcg(level, evaluation_level, level_eval_all, querynumber, ax):
         sns.lineplot(data=df_l[l], x='query', y='gain', label=l, ax = ax)
 
 
-def lineplot_effeff(level, evaluation_level, level_eval_all, querynumber, ax):
+def lineplot_effeff(level, evaluation_level, level_eval_all, ax):
     
-    df_l = dfl_effeff(level, level_eval_all, querynumber)
+    df_l = dfl_effeff(level, level_eval_all)
 
     for l in level:
         sns.lineplot(data=df_l[l], x='cost', y='gain', label=l, ax = ax)
@@ -170,9 +170,9 @@ def histplots_sdcg(level, evaluation_level, level_eval_all, querynumber, ax):
     ax.legend()
 
 
-def histplots_effeff(level, evaluation_level, level_eval_all, querynumber, ax):
+def histplots_effeff(level, evaluation_level, level_eval_all, ax):
     
-    df_l = dfl_effeff(level, level_eval_all, querynumber)
+    df_l = dfl_effeff(level, level_eval_all)
 
     for l in level:
         sns.histplot(df_l[l], x ='gain', label = l, legend=True, ax=ax)
