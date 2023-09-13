@@ -135,7 +135,7 @@ def init():
         snippet_pipe = bm25 >> pt.apply.rename({'score':'score_bm25'}) >> title >> body >> pt.text.snippets(psg_scorer) >> \
         title_tf >> pt.apply.rename({'score':'title_tf'}) >> summary_tf >> pt.apply.rename({'score':'summary_tf'}) >> \
         title_bm25 >> pt.apply.rename({'score':'title_bm25'}) >> summary_bm25 >> pt.apply.rename({'score':'summary_bm25'}) >> \
-        pt.apply.rank(drop=True) >> pt.apply.rank(lambda row: row.name)
+        pt.apply.rank(drop=True) >> pt.apply.rank(lambda row: row.name) >> pt.apply.rename({'score_bm25':'score'})
 
         snippet_models[key] = snippet_pipe
         # snippet pipe - end
@@ -171,7 +171,7 @@ def response_query_wapo_snippet(query: str):
 
     last_query = query
     return jsonify(
-        response_query_wapo=results.to_dict()
+        response_query_wapo_snippet=results.to_dict()
     )
 
 @app.route("/results_wapo_monot5/<query>", methods=['GET'])
@@ -208,7 +208,7 @@ def response_query_nyt_snippet(query: str):
 
     last_query = query
     return jsonify(
-        response_query_nyt=results.to_dict()
+        response_query_nyt_snippet=results.to_dict()
     )
 
 #TODO implement nyt index
