@@ -1,4 +1,4 @@
-<userConfiguration id="justfirst-perfect-10rpp">
+<userConfiguration id="D2Q-perfect-10rpp">
 
 	<algorithm class="MarkovChain">
         <attribute name="model_type" type="string" value="None" is_argument="true" />
@@ -6,10 +6,12 @@
         <attribute name="states" type="string" value="" is_argument="true" />
     </algorithm>
 	
-	<queryGenerator class="PredeterminedQueryGenerator">
+	<queryGenerator class="Doc2QueryGeneratorNews">
         <attribute name="stopword_file" type="string" value="/workspace/data/stopword-list.txt" is_argument="true" />
 		<attribute name="query_file" type="string" value="/workspace/data/wapo/title_queries" is_argument="true" />
         <attribute name="user" type="string" value="1" is_argument="true" />
+		<attribute name="use_relevant" type="boolean" value="False" is_argument="true" />
+		<attribute name="corpus" type="string" value="wapo" is_argument="true" />
     </queryGenerator>
 
 	<textClassifiers>
