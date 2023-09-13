@@ -73,9 +73,13 @@
     
     <users>
         <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> -->
+
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_t150nr_nyt.xml"/>
          <user configurationFile="/workspace/sims/users/gpt+_almostrandom_10rpp_nyt.xml"/>
          <user configurationFile="/workspace/sims/users/gpt+_informational_10rpp_nyt.xml"/>
          <user configurationFile="/workspace/sims/users/gpt+_navigational_10rpp_nyt.xml"/>
+        
+
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">
