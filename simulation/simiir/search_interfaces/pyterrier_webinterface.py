@@ -96,22 +96,23 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
                 elif self._corpus == 'nyt':
                     title = record.headline
 
+                if hasattr(result[1], 'summary'):
+                    _summary = {'summary': result[1].summary, 
+                                'summary_bm25': result[1].summary_bm25,
+                                'summary_tf': result[1].summary_tf,
+                                'title': result[1].title,
+                                'title_bm25': result[1].title_bm25,
+                                'title_tf': result[1].title_tf}
+                else:
+                    _summary = None
+
                 response.add_result(title=title, 
+                                    summary=_summary,
                                     docid=_docno, 
                                     rank=result[1]['rank'] + 1, 
                                     score=result[1].score, 
                                     content=record.body, 
                                     whooshid=_docno)
-
-
-            #    response.add_result(title=record.title,
-            #                        url=record.url,
-            #                        summary=record.kicker,
-            #                        docid=_docno,
-            #                        rank=result[1]['rank'] + 1,
-            #                       score=result[1].score,
-            #                        content=record.body,
-            #                        whooshid=_docno)
             
         response.result_total = len(results)
         
