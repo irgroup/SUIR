@@ -60,8 +60,12 @@
     </topics>
     
     <users>
+        <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf2_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf3_10rpp_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf4_10rpp_wapo.xml"/>
-
+        <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf5_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf6_10rpp_wapo.xml"/>
+        
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">

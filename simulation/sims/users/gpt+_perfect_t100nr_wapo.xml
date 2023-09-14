@@ -1,0 +1,52 @@
+<userConfiguration id="GPT+-perfect-t100nr">
+
+	<algorithm class="MarkovChain">
+        <attribute name="model_type" type="string" value="None" is_argument="true" />
+        <attribute name="transition_matrix" type="string" value="" is_argument="true" />
+        <attribute name="states" type="string" value="" is_argument="true" />
+    </algorithm>
+	
+	<queryGenerator class="PredeterminedQueryGenerator">
+        <attribute name="stopword_file" type="string" value="/workspace/data/stopword-list.txt" is_argument="true" />
+		<attribute name="query_file" type="string" value="/workspace/data/wapo/gpt+.txt" is_argument="true" />
+        <attribute name="user" type="string" value="1" is_argument="true" />
+    </queryGenerator>
+
+	<textClassifiers>
+		<snippetClassifier class="StochasticInformedTrecTextClassifier">
+            <attribute name="qrel_file" type="string" value="/workspace/data/wapo/wapo_qrels" is_argument="true" />
+            <attribute name="rprob" type="float" value="1.0" is_argument="true" />
+            <attribute name="nprob" type="float" value="0.0" is_argument="true" />
+			<attribute name="data_handler" type="integer" value="0" is_argument="false" />
+		</snippetClassifier>
+
+		<documentClassifier class="StochasticInformedTrecTextClassifier">
+            <attribute name="qrel_file" type="string" value="/workspace/data/wapo/wapo_qrels" is_argument="true" />
+            <attribute name="rprob" type="float" value="1.0" is_argument="true" />
+            <attribute name="nprob" type="float" value="0.0" is_argument="true" />
+			<attribute name="data_handler" type="integer" value="0" is_argument="false" />
+		</documentClassifier>
+	</textClassifiers>
+
+	<stoppingDecisionMaker class="TimeSinceRelevancyDecisionMaker">
+		<attribute name="timeout_threshold" type="integer" value="100" is_argument="true" />
+	</stoppingDecisionMaker>
+
+	<logger class="FixedCostLogger">
+		<attribute name="time_limit" type="integer" value="10000" is_argument="true" />
+		<attribute name="query_cost" type="integer" value="10" is_argument="true" />
+		<attribute name="document_cost" type="integer" value="20" is_argument="true" />
+		<attribute name="snippet_cost" type="integer" value="3" is_argument="true" />
+		<attribute name="serp_results_cost" type="integer" value="5" is_argument="true" />
+		<attribute name="mark_document_cost" type="integer" value="3" is_argument="true" />
+	</logger>
+
+	<searchContext class="SearchContext">
+		<attribute name="relevance_revision" type="integer" value="1" is_argument="false" />
+	</searchContext>
+	
+	<serpImpression class="SimpleSERPImpression">
+        <attribute name="qrel_file" type="string" value="/workspace/data/wapo/wapo_qrels" is_argument="true" />
+	</serpImpression>
+
+</userConfiguration>
