@@ -15,6 +15,22 @@ import re
 import seaborn as sns 
 sns.set_style('darkgrid')
 
+## Vorbereitung
+
+def get_log_props(log_path, log_root_path):
+    log_path = os.path.relpath(log_path, log_root_path)
+    parts = log_path.split('-')
+    if len(parts) > 2:
+        sim = parts[0]
+        ranking = parts[1]
+        topic = parts[2]
+        strat = parts[3]
+        user = parts[4]
+        crit = parts[5].split('.')[0]
+
+        return (sim, ranking, topic, strat, user, crit)
+    else:
+        return 
 
 ## Relevance judgements & querynumber
 
@@ -63,11 +79,10 @@ def levelname(level, levels, levelnames):
 # fixed_combinations(...): combinations that are suitable for the evaluation
 # Gibt alle Kombinationen von Levelausprägungen an, die es für jede Ausprägung des Evaluationslevels gibt, mit (teilweise) festgesetzten Werten.
 # So werden beispielsweise bei der Evaluation der Query-Strategie nur die User-Typen einbezogen, für die es log-Dateien mit allen möglichen Query-Strategien gibt
-def fixed_combinations(fixed_list, level_index, sim, levels, log_root_path, topics_to_analyze, log_df):
+def fixed_combinations(fixed_list, level_index, sim, levels, log_df):
     fixed_list.remove(levels[level_index])
     combinations = [p for p in itertools.product(*fixed_list)]
     existing_l = [l for l in levels[level_index] if ((log_df['Simulation'] == sim) & (log_df.iloc[:,level_index+1] == l)).any()] # falls es Ausprägungen des zu evaluierenden Levels nicht in der betrachteten Simulation gibt
-    print(existing_l)
     combis = []
     for combination in combinations:
         p = True
@@ -78,7 +93,7 @@ def fixed_combinations(fixed_list, level_index, sim, levels, log_root_path, topi
             query_type = cl[1]
             user = cl[2]
             crit = cl[3]
-            if not os.path.isfile(log_root_path + sim + "-" + ranking + "-" + str(topics_to_analyze[0]) + "-" + query_type + "-" + user + "-" + crit + ".log"):
+            if not ((log_df['Simulation'] == sim) & (log_df['Ranking'] == ranking) & (log_df['Strat'] == query_type) & (log_df['User'] == user) & (log_df['Crit'] == crit)).any():
                 p = False
         if p == True:
             for lev in existing_l:
@@ -86,13 +101,6 @@ def fixed_combinations(fixed_list, level_index, sim, levels, log_root_path, topi
                 x.insert(level_index, lev)
                 combis.append(x)
     return combis
-# Es wird vorausgesetzt, dass es die logs zu allen Themen gibt (Überprüfung nur für das erste Thema)
-
-# sim_files(...): returns all files that belong to a specific simulation
-def sim_files(sim, log_files):
-    for l in log_files:
-        simfiles = [l for l in log_files if re.split(r'-|\\|/',l.split('-')[0])[-1] == sim]
-    return simfiles
 
 ## Plots
 
@@ -188,4 +196,38 @@ def histplots_srbp(level, evaluation_level, level_eval_all, querynumber, ax):
         sns.histplot(df_l[l], x ='gain', label = l, legend=True, ax=ax)
 
     ax.legend()
+
+## Topics to analyze
+
+def available_topics(log_df, sim, ranking, query_type, user, crit):
+    res = []
+    for index, row in log_df.iterrows():
+        if ((row['Simulation'] == sim) & (row['Ranking'] == ranking) & (row['Strat'] == query_type) & (row['User'] == user) & (row['Crit'] == crit)):
+            res.append(row['Topics'])
+    return res
+
+def available_topics_combinations(log_df, sim, combinations):
+    topic_lists = []
+    for combi in combinations:
+        topics_combi = available_topics(log_df, sim, combi[0], combi[1], combi[2], combi[3])
+        topic_lists.append(topics_combi)
+    res = [x for x in topic_lists[0] if all(x in sublist for sublist in topic_lists)]
+    return res
+
+## Files to consider
+
+# sim_files(...): returns all files that belong to a specific simulation
+def sim_files(sim, log_files):
+    for l in log_files:
+        simfiles = [l for l in log_files if re.split(r'-|\\|/',l.split('-')[0])[-1] == sim]
+    return simfiles
+
+def filter_logfiles(logfiles, sims = 'all', rankings = 'all', strats = 'all', users= 'all', crits = 'all', topics = 'all'):
+    res = []
+    log_root_path = '/'.join(re.split(r'\\|/',logfiles[0])[:-1])+'/'
+    for logfile in logfiles: 
+        props = get_log_props(logfile, log_root_path)
+        if (sims == 'all' or props[0] in sims) and (rankings == 'all' or props[1] in rankings) and (topics == 'all' or props[2] in topics) and (strats == 'all' or props[3] in strats) and (users == 'all' or props[4] in users) and (crits == 'all' or props[5] in crits):
+            res.append(logfile)
+    return res
 
