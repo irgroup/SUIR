@@ -7,13 +7,17 @@ import json
 import re
 import pyterrier as pt
 from .utils import IdfProvider, get_stopwords, filter_keywords
+import pickle
+
+from collections import Counter
+
 
 class Doc2QueryGeneratorNews(BaseQueryGenerator):
     """
     A query generator that selects candidate queries based on doc2query queries from seen relevant or all seen docs
     """
 
-    def __init__(self, stopword_file, query_file, user, background_file=[], use_relevant=True, use_filter=True, corpus="dummy"):
+    def __init__(self, stopword_file, query_file, user, background_file=[], use_relevant=True, use_filter=True, use_topic_context=False, filter_low_signal_terms=True, corpus="dummy", low_signal_threshold = 3):
         super(Doc2QueryGeneratorNews, self).__init__(stopword_file, background_file=background_file)
         self.__corpus = corpus
         self.__index_path=f'/app/indices/{self.__corpus}/data.properties'
@@ -21,8 +25,18 @@ class Doc2QueryGeneratorNews(BaseQueryGenerator):
         self.__queries = self.get_queries(query_file)
         self.__user = user
         self.__use_relevant = use_relevant
+        self.__use_topic_context = use_topic_context
+        self._filter_low_signal_terms = filter_low_signal_terms
+        self._low_signal_threshold = low_signal_threshold
+
         self.__idf_provider = IdfProvider(self.__index_path, get_stopwords())
         self._user_filter = use_filter
+
+        self._topics = None
+
+        if use_topic_context:
+            topic_path = f"/workspace/data/{self.__corpus}/{self.__corpus}_topics.pkl"
+            self._topics = pickle.load(open(topic_path, "rb"))
 
     def get_queries(self, query_file):
         queries = {}
@@ -70,6 +84,14 @@ class Doc2QueryGeneratorNews(BaseQueryGenerator):
         
     def generate_query(self, search_context : SearchContext):
         
+        #first try to use context terms
+        if self.__use_topic_context:
+            candidate_terms = search_context.get_context_terms()
+            new_query = self.get_new_canidate(candidate_terms, search_context)
+            if new_query:
+                return new_query
+
+
         candidate_terms = search_context.get_rel_found_terms()
 
         new_query = self.get_new_canidate(candidate_terms, search_context)
@@ -118,6 +140,37 @@ class Doc2QueryGeneratorNews(BaseQueryGenerator):
 
         return filter_keywords(self.__idf_provider, keywords)
         
+    def set_context_terms(self, search_context : SearchContext):
+
+        topic_id = search_context.topic.id
+        topic_context = self._topics[self._topics['qid'] == topic_id]
+        start_terms = self.__queries[topic_id].split(" ")
+        
+        terms_description = set(topic_context['description'].values[0].split(" "))
+        terms_narrative = set(topic_context['narrative'].values[0].split(" "))
+
+        context_terms = terms_narrative.union(terms_description)
+        context_terms = [term for term in context_terms if term not in start_terms]
+
+        if self._filter_low_signal_terms:
+            #generate list of low signal terms from desription/narrative
+
+            all_terms = []
+
+            for _, row in self._topics.iterrows():
+                all_terms += row['description'].split(" ")
+                all_terms += row['narrative'].split(" ")
+
+            cnt_list = Counter(all_terms)
+            cnt_list = {k:v for k, v in sorted(cnt_list.items(), key=lambda item: -item[1])}
+            
+            context_terms = [term for term in context_terms if cnt_list[term] <= self._low_signal_threshold]
+
+        context_terms = filter_keywords(self.__idf_provider, context_terms)
+        for term in context_terms:
+            search_context.add_context_term(term)
+
+
     def get_next_query(self, search_context : SearchContext):
         
         topic = search_context.topic.id
@@ -132,6 +185,9 @@ class Doc2QueryGeneratorNews(BaseQueryGenerator):
             keywords = self.generate_keywords_from_docs(search_context.get_relevant_documents(), search_context)
             search_context.add_rel_found_terms(keywords)
 
+        #add keywords from topic context (description and narrative)
+        if self.__use_topic_context and not search_context.get_context_terms():
+            self.set_context_terms(search_context)
 
         return self.generate_query(search_context)
 

@@ -90,6 +90,7 @@ class SearchContext(object):
         
         self._rel_found_terms = []
         self._nrel_found_terms = []
+        self._context_terms = []
 
         self._docs_used_for_keywords = set()
     
@@ -479,3 +480,10 @@ class SearchContext(object):
 
     def set_use_rel_docs(self, use_rel_docs):
         self._search_interface.set_use_rel_docs(use_rel_docs, self)
+
+    def add_context_term(self, term):
+        if term not in self._context_terms:
+            self._context_terms.append(term)
+
+    def get_context_terms(self):
+        return self._context_terms
