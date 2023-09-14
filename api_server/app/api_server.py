@@ -89,7 +89,7 @@ def nyt_doc(docno_request):
 
 def init():   
     if not pt.started():
-        pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"])
+        pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"], mem=20000, logging="ERROR")
 
     global bm25_models
     global snippet_models
@@ -166,7 +166,7 @@ def response_query_wapo_snippet(query: str):
     #Sgc.collect()
     
     global last_query
-
+        
     results = snippet_models['wapo'].search(query)
 
     last_query = query
@@ -211,7 +211,7 @@ def response_query_nyt_snippet(query: str):
         response_query_nyt_snippet=results.to_dict()
     )
 
-#TODO implement nyt index
+
 @app.route("/results_nyt_monot5/<query>", methods=['GET'])
 def response_query_nyt_monot5(query: str):
     #Sgc.collect()

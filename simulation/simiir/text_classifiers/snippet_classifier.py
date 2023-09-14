@@ -36,6 +36,7 @@ class SnippetClassifier(BaseTextClassifier):
             c = self._search_context._current_snippet.content.get('summary_bm25')
 
         if c > self.criterion_threshold:
+            
             # print('Click!')
             return True
     
