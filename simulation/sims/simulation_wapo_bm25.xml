@@ -74,8 +74,18 @@
         <user configurationFile="/workspace/sims/users/d2q_perfect_10rpp_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/d2q+_perfect_10rpp_wapo.xml"/>
         -->
-        <user configurationFile="/workspace/sims/users/d2q+_perfect_10rpp_wapo.xml"/>
-        <user configurationFile="/workspace/sims/users/d2q++_perfect_10rpp_wapo.xml"/>
+        <user configurationFile=/workspace/sims/users/d2q++_perfect_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/d2q+_perfect_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/d2q_perfect_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_almostrandom_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_informational_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_navigational_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_perfect_t100nr_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_perfect_t150nr_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt+_perfect_t50nr_wapo.xml/>
+        <user configurationFile=/workspace/sims/users/gpt_perfect_10rpp_wapo.xml/>
+        
          
     </users>
 
