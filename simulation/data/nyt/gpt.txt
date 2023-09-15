@@ -3598,7 +3598,7 @@
 98,1,426,Police K9 harness
 99,1,426,Law enforcement dog handler gear
 100,1,426,K9 handler salary
-1,1,427,"UV damage, eyes"
+1,1,427,UV damage, eyes
 2,1,427,UV damage eyes symptoms
 3,1,427,Eye damage from UV radiation
 4,1,427,How to prevent UV damage eyes

@@ -3598,7 +3598,7 @@
 98,1,426,What is the protocol for deploying a law enforcement K9 unit during a shooting?
 99,1,426,How are law enforcement K9 units trained to search for illegal drugs in vehicles?
 100,1,426,How do law enforcement K9 units assist in detecting credit card fraud?
-1,1,427,"UV damage, eyes"
+1,1,427,UV damage eyes
 2,1,427,UV damage to eyes
 3,1,427,Sun damage to eyes
 4,1,427,Effects of UV light on eyes
