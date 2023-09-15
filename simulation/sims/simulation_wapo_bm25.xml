@@ -78,7 +78,7 @@
         <user configurationFile="/workspace/sims/users/gpt+_perfect_t50nr_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_perfect_10rpp_wapo.xml"/>
         -->
-        
+        <user configurationFile="/workspace/sims/users/gpt*_perfect_10rpp_wapo.xml"/>
         
          
     </users>
