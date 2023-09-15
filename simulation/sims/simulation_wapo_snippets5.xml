@@ -1,0 +1,76 @@
+<simulationConfiguration id="wapo-bm25">
+	
+	<output baseDirectory="/workspace/sims/output/"
+			saveInteractionLog="true"
+			saveRelevanceJudgments="true"
+			trec_eval="false" />
+	
+    <topics>
+            <topic id="321" filename="/workspace/data/wapo/topics/topic.321" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="336" filename="/workspace/data/wapo/topics/topic.336" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="341" filename="/workspace/data/wapo/topics/topic.341" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="347" filename="/workspace/data/wapo/topics/topic.347" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="350" filename="/workspace/data/wapo/topics/topic.350" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="362" filename="/workspace/data/wapo/topics/topic.362" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="363" filename="/workspace/data/wapo/topics/topic.363" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="367" filename="/workspace/data/wapo/topics/topic.367" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="375" filename="/workspace/data/wapo/topics/topic.375" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="378" filename="/workspace/data/wapo/topics/topic.378" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="393" filename="/workspace/data/wapo/topics/topic.393" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="397" filename="/workspace/data/wapo/topics/topic.397" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="400" filename="/workspace/data/wapo/topics/topic.400" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="408" filename="/workspace/data/wapo/topics/topic.408" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="414" filename="/workspace/data/wapo/topics/topic.414" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="422" filename="/workspace/data/wapo/topics/topic.422" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="426" filename="/workspace/data/wapo/topics/topic.426" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="427" filename="/workspace/data/wapo/topics/topic.427" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="433" filename="/workspace/data/wapo/topics/topic.433" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="439" filename="/workspace/data/wapo/topics/topic.439" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="442" filename="/workspace/data/wapo/topics/topic.442" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="445" filename="/workspace/data/wapo/topics/topic.445" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="626" filename="/workspace/data/wapo/topics/topic.626" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="646" filename="/workspace/data/wapo/topics/topic.646" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="690" filename="/workspace/data/wapo/topics/topic.690" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="801" filename="/workspace/data/wapo/topics/topic.801" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="802" filename="/workspace/data/wapo/topics/topic.802" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="803" filename="/workspace/data/wapo/topics/topic.803" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="804" filename="/workspace/data/wapo/topics/topic.804" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="805" filename="/workspace/data/wapo/topics/topic.805" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="806" filename="/workspace/data/wapo/topics/topic.806" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="807" filename="/workspace/data/wapo/topics/topic.807" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="808" filename="/workspace/data/wapo/topics/topic.808" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="809" filename="/workspace/data/wapo/topics/topic.809" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="810" filename="/workspace/data/wapo/topics/topic.810" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="811" filename="/workspace/data/wapo/topics/topic.811" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="812" filename="/workspace/data/wapo/topics/topic.812" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="813" filename="/workspace/data/wapo/topics/topic.813" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="814" filename="/workspace/data/wapo/topics/topic.814" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="815" filename="/workspace/data/wapo/topics/topic.815" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="816" filename="/workspace/data/wapo/topics/topic.816" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="817" filename="/workspace/data/wapo/topics/topic.817" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="818" filename="/workspace/data/wapo/topics/topic.818" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="819" filename="/workspace/data/wapo/topics/topic.819" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="820" filename="/workspace/data/wapo/topics/topic.820" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="821" filename="/workspace/data/wapo/topics/topic.821" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="822" filename="/workspace/data/wapo/topics/topic.822" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="823" filename="/workspace/data/wapo/topics/topic.823" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+            <topic id="824" filename="/workspace/data/wapo/topics/topic.824" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+             
+            <topic id="825" filename="/workspace/data/wapo/topics/topic.825" qrelsFilename="/workspace/data/wapo/wapo_qrels"/>
+    </topics>
+    
+    <users>
+        <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf6_10rpp_wapo.xml"/>
+        
+    </users>
+
+	<searchInterface class="PyterrierWebSearchInterface">
+        <!--
+        This is the search interface that the simulated users will interact with
+        -->
+		<attribute name="index_dir" type="string" value="" is_argument="false" />
+        <attribute name="corpus" type="string" value="wapo" is_argument="true" />
+        <attribute name="neural" type="string" value="_snippet" is_argument="true" />
+	</searchInterface>
+	
+</simulationConfiguration>
