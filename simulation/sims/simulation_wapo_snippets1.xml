@@ -60,7 +60,8 @@
     </topics>
     
     <users>
-        <user configurationFile="/workspace/sims/users/gpt+_snipsummarytf2_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_snipknowfulltf2_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_snipknowfulltf3_10rpp_wapo.xml"/>
         
     </users>
 
