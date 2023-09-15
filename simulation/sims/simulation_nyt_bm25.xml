@@ -72,22 +72,25 @@
     </topics>
     
     <users>
-        <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> 
-
-        <user configurationFile="/workspace/sims/users/gpt+_perfect_t150nr_nyt.xml"/>
-         <user configurationFile="/workspace/sims/users/gpt+_almostrandom_10rpp_nyt.xml"/>
-         <user configurationFile="/workspace/sims/users/gpt+_informational_10rpp_nyt.xml"/>
-         <user configurationFile="/workspace/sims/users/gpt+_navigational_10rpp_nyt.xml"/>
-        -->
-        <user configurationFile="/workspace/sims/users/d2q_perfect_10rpp_nyt.xml"/>
+        <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> -->
+        <user configurationFile="/workspace/sims/users/d2q++_perfect_10rpp_nyt.xml"/>
         <user configurationFile="/workspace/sims/users/d2q+_perfect_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q_perfect_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_almostrandom_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_informational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_navigational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_t100nr_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_t150nr_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_perfect_t50nr_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt_perfect_10rpp_nyt.xml"/>
 
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">
         <!--
         This is the search interface that the simulated users will interact with
-        -->
+        
 		<attribute name="index_dir" type="string" value="" is_argument="false" />
         <attribute name="corpus" type="string" value="nyt" is_argument="true" />
         <attribute name="neural" type="string" value="" is_argument="true" />
