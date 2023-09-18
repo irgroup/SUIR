@@ -14,6 +14,7 @@
 
 	<textClassifiers>
 		<snippetClassifier class="SnippetClassifier">
+			<attribute name="corpus" type="string" value="wapo" is_argument="true" />
             <attribute name="criterion" type="string" value="full_knowledge" is_argument="true" />
             <attribute name="criterion_threshold" type="float" value="3.0" is_argument="true" />
 		</snippetClassifier>
