@@ -89,7 +89,7 @@ def nyt_doc(docno_request):
 
 def init():   
     if not pt.started():
-        pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"], mem=20000, logging="ERROR")
+        pt.init(boot_packages=["com.github.terrierteam:terrier-prf:-SNAPSHOT"], mem=40000, logging="ERROR")
 
     global bm25_models
     global snippet_models
