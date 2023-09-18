@@ -170,3 +170,4 @@ simulation/data/d2qs_clean
 !simulation/data/wapo/topics/
 !simulation/data/nyt/topics/
 .DS_Store
+simulation/simiir/sim.log
