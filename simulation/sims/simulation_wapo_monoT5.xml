@@ -61,16 +61,17 @@
     </topics>
     
     <users>
-    <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_wapo.xml"/> -->
         <user configurationFile="/workspace/sims/users/gpt_perfect_10rpp_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_almostrandom_10rpp_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_informational_10rpp_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_navigational_10rpp_wapo.xml"/>
-
+        
+        <!-- 
         <user configurationFile="/workspace/sims/users/gpt_perfect_t100nr_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_almostrandom_t100nr_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_informational_t100nr_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_navigational_t100nr_wapo.xml"/>
+        -->
     </users>
 
 	<searchInterface class="PyterrierWebSearchInterface">
