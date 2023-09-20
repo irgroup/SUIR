@@ -1,4 +1,4 @@
-<userConfiguration id="gpt-navigational-10rpp">
+<userConfiguration id="GPT-navigational-10rpp">
 
 	<algorithm class="MarkovChain">
         <attribute name="model_type" type="string" value="None" is_argument="true" />

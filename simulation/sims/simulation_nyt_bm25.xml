@@ -83,7 +83,7 @@
 	<searchInterface class="PyterrierWebSearchInterface">
         <!--
         This is the search interface that the simulated users will interact with
-        
+        -->
 		<attribute name="index_dir" type="string" value="" is_argument="false" />
         <attribute name="corpus" type="string" value="nyt" is_argument="true" />
         <attribute name="neural" type="string" value="" is_argument="true" />
