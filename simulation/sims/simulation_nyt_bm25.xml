@@ -73,22 +73,10 @@
     
     <users>
         <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> -->
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_almostrandom_10rpp_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_almostrandom_t100nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_almostrandom_t150nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_almostrandom_t50nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_informational_10rpp_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_informational_t100nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_informational_t150nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_informational_t50nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_navigational_10rpp_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_navigational_t100nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_navigational_t150nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_navigational_t50nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_perfect_10rpp_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_perfect_t100nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_perfect_t150nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/d2q++_users/nyt/d2q++_perfect_t50nr_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt_perfect_10rpp_nyt.xml"/>
+         <user configurationFile="/workspace/sims/users/gpt_almostrandom_10rpp_nyt.xml"/>
+         <user configurationFile="/workspace/sims/users/gpt_informational_10rpp_nyt.xml"/>
+         <user configurationFile="/workspace/sims/users/gpt_navigational_10rpp_nyt.xml"/>
 
     </users>
 
