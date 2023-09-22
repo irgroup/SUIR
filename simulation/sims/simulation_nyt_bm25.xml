@@ -72,8 +72,12 @@
     </topics>
     
     <users>
-        <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> -->
-        <user configurationFile="/workspace/sims/users/gpt_informational_t50nr_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q+_informational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q_informational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt*_informational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_informational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt_informational_10rpp_nyt.xml"/>
+        
 
     </users>
 
