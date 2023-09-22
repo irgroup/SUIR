@@ -74,8 +74,6 @@
     <users>
         <!-- <user configurationFile="/workspace/sims/users/gpt+_perfect_10rpp_nyt.xml"/> -->
         <user configurationFile="/workspace/sims/users/gpt_informational_t50nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/users/gpt_informational_t110nr_nyt.xml"/>
-        <user configurationFile="/workspace/sims/users/gpt_informational_20rpp_nyt.xml"/>
 
     </users>
 
