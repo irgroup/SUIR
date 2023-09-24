@@ -96,6 +96,8 @@ def init():
     global session_ds
     global session_d2q
     global indices
+
+    cut_off = 100
     
     monoT5 = MonoT5ReRanker(text_field="body", batch_size=50)
 
@@ -103,7 +105,7 @@ def init():
     for key, val in index_path_dic.items():
         index_ref = pt.IndexRef.of(val)
         indices[key] = pt.IndexFactory.of(index_ref)
-        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=50)
+        bm25_models[key] = pt.BatchRetrieve(indices[key] , wmodel='BM25', num_results=cut_off)
         mono_t5_pipes[key] = bm25_models[key] >> pt.text.get_text(index_ref, "body") >> monoT5
 
         # Snippet pipe - start
@@ -126,7 +128,7 @@ def init():
             title = pt.apply.title(lambda row: nyt_doc(row["docno"]).headline)
             body = pt.apply.text(lambda row: nyt_doc(row["docno"]).body)
 
-        bm25 = pt.BatchRetrieve(indices[key], wmodel='BM25', num_results=50)
+        bm25 = pt.BatchRetrieve(indices[key], wmodel='BM25', num_results=cut_off)
 
         # 1) get bm25 ranking, headlines, and full texts, make summaries from full texts
         # 2) get term frequencies of headlines and summaries wrt. query string
