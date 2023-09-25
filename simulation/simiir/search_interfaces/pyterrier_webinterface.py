@@ -55,7 +55,7 @@ class PyterrierWebSearchInterface(BaseSearchInterface):
         engine = create_engine(conn_string)
         Session = sessionmaker(bind=engine)
         self._session = Session()
-        self._filter_seen_rel = True
+        self._filter_seen_rel = False
         self._search_context = None
 
         self._entry_class = None
