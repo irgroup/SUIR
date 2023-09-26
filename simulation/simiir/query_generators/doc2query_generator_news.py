@@ -17,7 +17,7 @@ class Doc2QueryGeneratorNews(BaseQueryGenerator):
     A query generator that selects candidate queries based on doc2query queries from seen relevant or all seen docs
     """
 
-    def __init__(self, stopword_file, query_file, user, background_file=[], use_relevant=True, use_filter=True, use_topic_context=False, filter_low_signal_terms=True, corpus="dummy", low_signal_threshold = 3):
+    def __init__(self, stopword_file, query_file, user, background_file=[], use_relevant=True, use_filter=False, use_topic_context=False, filter_low_signal_terms=True, corpus="dummy", low_signal_threshold = 3):
         super(Doc2QueryGeneratorNews, self).__init__(stopword_file, background_file=background_file)
         self.__corpus = corpus
         self.__index_path=f'/app/indices/{self.__corpus}/data.properties'

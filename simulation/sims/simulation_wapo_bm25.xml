@@ -66,13 +66,22 @@
     
     <users>
         
-        <user configurationFile="/workspace/sims/users/gpt_almostrandom_10rpp_wapo.xml"/>
-        <user configurationFile="/workspace/sims/users/gpt_perfect_10rpp_wapo.xml"/>
-        <user configurationFile="/workspace/sims/users/gpt_navigational_10rpp_wapo.xml"/>
-        <user configurationFile="/workspace/sims/users/gpt_informational_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q++_informational_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q++_informational_t50nr_wapo.xml"/>
 
-        <user configurationFile="/workspace/sims/users/gpt_informational_20rpp_wapo.xml"/>
-        <user configurationFile="/workspace/sims/users/gpt_informational_t110nr_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q+_informational_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q+_informational_t50nr_wapo.xml"/>
+
+        <user configurationFile="/workspace/sims/users/d2q_informational_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/d2q_informational_t50nr_wapo.xml"/>
+
+        <user configurationFile="/workspace/sims/users/gpt*_informational_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt*_informational_t50nr_wapo.xml"/>
+
+        <user configurationFile="/workspace/sims/users/gpt+_informational_10rpp_wapo.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt+_informational_t50nr_wapo.xml"/>
+        
+        <user configurationFile="/workspace/sims/users/gpt_informational_10rpp_wapo.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_informational_t50nr_wapo.xml"/>
 
         
