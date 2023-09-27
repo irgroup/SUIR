@@ -8,7 +8,7 @@
     <topics>
         <!-- 
         These are the topics that each simulated user will complete
-        
+        -->
         <topic id="307" filename="/workspace/data/nyt/topics/topic.307" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="310" filename="/workspace/data/nyt/topics/topic.310" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="321" filename="/workspace/data/nyt/topics/topic.321" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
@@ -43,7 +43,7 @@
         <topic id="399" filename="/workspace/data/nyt/topics/topic.399" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="400" filename="/workspace/data/nyt/topics/topic.400" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="404" filename="/workspace/data/nyt/topics/topic.404" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
-        -->
+        
 
         <topic id="408" filename="/workspace/data/nyt/topics/topic.408" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
 
@@ -74,6 +74,7 @@
     </topics>
     
     <users>
+        <!--
         <user configurationFile="/workspace/sims/users/d2q++_informational_10rpp_nyt.xml"/>
         <user configurationFile="/workspace/sims/users/d2q++_informational_t50nr_nyt.xml"/>
 
@@ -91,7 +92,13 @@
         
         <user configurationFile="/workspace/sims/users/gpt_informational_10rpp_nyt.xml"/>
         <user configurationFile="/workspace/sims/users/gpt_informational_t50nr_nyt.xml"/>
+
+        -->
         
+        <user configurationFile="/workspace/sims/users/gpt**_informational_10rpp_nyt.xml"/>
+        <user configurationFile="/workspace/sims/users/gpt**_informational_t50nr_nyt.xml"/>
+
+
 
     </users>
 
