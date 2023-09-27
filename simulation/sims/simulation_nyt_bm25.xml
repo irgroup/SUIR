@@ -8,7 +8,7 @@
     <topics>
         <!-- 
         These are the topics that each simulated user will complete
-        -->
+        
         <topic id="307" filename="/workspace/data/nyt/topics/topic.307" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="310" filename="/workspace/data/nyt/topics/topic.310" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="321" filename="/workspace/data/nyt/topics/topic.321" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
@@ -43,6 +43,8 @@
         <topic id="399" filename="/workspace/data/nyt/topics/topic.399" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="400" filename="/workspace/data/nyt/topics/topic.400" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
         <topic id="404" filename="/workspace/data/nyt/topics/topic.404" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
+        -->
+
         <topic id="408" filename="/workspace/data/nyt/topics/topic.408" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
 
         <topic id="414" filename="/workspace/data/nyt/topics/topic.414" qrelsFilename="/workspace/data/nyt/nyt_qrels" />
