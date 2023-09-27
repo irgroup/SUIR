@@ -50,9 +50,10 @@ def querynumber_min_max_avg(log_files):
     sumq = 0
     count = 0
     for path in log_files:
+        #print(path)
         count += 1
         currentq = 0
-        with open(path) as f_in:
+        with open(path, encoding='utf-8', errors='ignore') as f_in:
             for line in f_in.readlines():
                 parts = line.split(' ')
                 if parts[1] == 'QUERY':
