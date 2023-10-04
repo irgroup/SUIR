@@ -8,14 +8,13 @@ import os
 from matplotlib import rcParams
 import glob
 
-#from tqdm import tqdm_notebook
 from tqdm.notebook import tqdm
 import sys
 import re
 import seaborn as sns 
 sns.set_style('darkgrid')
 
-## Vorbereitung
+## Prepare
 
 def get_log_props(log_path, log_root_path):
     log_path = os.path.relpath(log_path, log_root_path)
@@ -50,7 +49,6 @@ def querynumber_min_max_avg(log_files):
     sumq = 0
     count = 0
     for path in log_files:
-        #print(path)
         count += 1
         currentq = 0
         with open(path, encoding='utf-8', errors='ignore') as f_in:
@@ -67,9 +65,9 @@ def querynumber_min_max_avg(log_files):
 
     return [minq, maxq, round(avgq)]
 
-## Allgemeine Hilfsfunktionen
+## General
 
-# levelname (level): Gibt den Namen eines Evaluationslevels zurück (Überschrift für die Grafiken & Dateiname beim Speichern der Grafiken)
+# levelname (level): returns the name of an evaluation level (can be used as title for plots)
 def levelname(level, levels, levelnames):
     evaluation_level = 'NO_NAME'
     for l in range (0, len(levels)):
@@ -78,12 +76,11 @@ def levelname(level, levels, levelnames):
     return evaluation_level
 
 # fixed_combinations(...): combinations that are suitable for the evaluation
-# Gibt alle Kombinationen von Levelausprägungen an, die es für jede Ausprägung des Evaluationslevels gibt, mit (teilweise) festgesetzten Werten.
-# So werden beispielsweise bei der Evaluation der Query-Strategie nur die User-Typen einbezogen, für die es log-Dateien mit allen möglichen Query-Strategien gibt
+# return all combinations of characteristics from other levels that exist with all characteristics of the level to be evaluated (while characteristics can be excluded on purpose)
 def fixed_combinations(fixed_list, level_index, sim, levels, log_df):
     fixed_list.remove(levels[level_index])
     combinations = [p for p in itertools.product(*fixed_list)]
-    existing_l = [l for l in levels[level_index] if ((log_df['Simulation'] == sim) & (log_df.iloc[:,level_index+1] == l)).any()] # falls es Ausprägungen des zu evaluierenden Levels nicht in der betrachteten Simulation gibt
+    existing_l = [l for l in levels[level_index] if ((log_df['Simulation'] == sim) & (log_df.iloc[:,level_index+1] == l)).any()] # if there are characteristics of a level that do not exist for the considered simulation
     combis = []
     for combination in combinations:
         p = True
